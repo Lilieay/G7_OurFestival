@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    color: #5D688A;
+}
+
+body{
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+#banner{
+   width: 150%;
+}
+
+#navi{
+    position: sticky;
+    top: 50px;
+}
