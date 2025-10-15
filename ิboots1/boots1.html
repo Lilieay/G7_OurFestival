@@ -24,11 +24,13 @@
 
     footer{padding:1rem;text-align:center;color:#6b7280}
 
-    /* Responsive */
     @media (max-width:800px){
       .grid{grid-template-columns:1fr}
       nav{flex-direction:column;align-items:flex-start;gap:.5rem}
       .hero{grid-template-columns:1fr}
+    }
+    #banner{
+      width: 25%;
     }
   </style>
 </head>
@@ -48,27 +50,26 @@
   <main class="container">
     <section class="hero">
       <div class="card">
-        <h1>ยินดีต้อนรับสู่หน้าเว็บพื้นฐาน</h1>
-        <p>ไฟล์นี้เป็นตัวอย่างหน้าเว็บ HTML + CSS เล็ก ๆ ที่อ่านง่าย ปรับแต่งได้ และรองรับมือถือ</p>
-        <p><button id="cta">คลิกเพื่อทักทาย</button></p>
+        <h1>ยินดีต้อนรับสู่ร้านEduPath</h1>
+        <p>ร้านนี้มุ่งเน้นที่การขายหนังสือเรียนโดยเฉพาะหนังสือสำหรับเด้กมัธยมที่ต้องการเตรียมตัวเข้าสู้รั้วมหาวิทยาลัย</p>
       </div>
 
       <div id="features" class="grid">
         <div class="card">
-          <h3>เรียบง่าย</h3>
-          <p>โครงสร้าง HTML เข้าใจง่าย เหมาะสำหรับผู้เริ่มต้น</p>
+          <h3>ตะลุยโจทย์ชัวร์ก่อนสอบ TGAT2 by อ.ขลุ่ย</h3>
+          <img src="/resource/TGAT2.jpg" alt="TGAT2" id="banner">
         </div>
         <div class="card">
-          <h3>ตอบสนอง</h3>
-          <p>มีสไตล์พื้นฐานที่ปรับ layout ให้เหมาะกับหน้าจอขนาดต่าง ๆ</p>
+          <h3>หนังสือเตรียมสอบ TPAT3 by Chula Book</h3>
+          <img src="/resource/TPAT3.jpg" alt="TPAT3" id="banner">
         </div>
         <div class="card">
-          <h3>ปรับแต่งได้</h3>
-          <p>แก้สี ฟอนต์ และเพิ่มส่วนประกอบตามที่ต้องการได้ทันที</p>
+          <h3>A-Level Math1 by ติวเตอร์แป๋ม</h3>
+          <img src="/resource/Math1.jpg" alt="Math1" id="banner">
         </div>
       </div>
   <footer>
-    <div class="container">© <span id="year"></span> เว็บตัวอย่าง — สร้างด้วย HTML</div>
+    <div class="container">© <span id="year"></span>เว็ปไซต์ร้านEduPath</div>
   </footer>
 </body>
 </html>
