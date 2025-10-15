@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>หน้าเว็บพื้นฐาน</title>
+  <style>
+    :root{
+      --bg:#f6f7fb; --card:#ffffff; --accent:#0066ff; --text:#0b1220;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+    header{background:linear-gradient(90deg,var(--accent),#4fb3ff);color:#fff;padding:1rem 1.25rem}
+    .container{max-width:1000px;margin:0 auto;padding:1rem}
+    nav{display:flex;gap:1rem;align-items:center;justify-content:space-between}
+    .brand{font-weight:700}
+    .nav-links{display:flex;gap:.75rem}
+    a.btn{background:rgba(255,255,255,.15);color:#fff;padding:.5rem .75rem;border-radius:8px;text-decoration:none}
+
+    main{padding:2rem 1.25rem}
+    .hero{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
+    .card{background:var(--card);padding:1rem;border-radius:12px;box-shadow:0 6px 20px rgba(12,20,40,0.06)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+
+    footer{padding:1rem;text-align:center;color:#6b7280}
+
+    /* Responsive */
+    @media (max-width:800px){
+      .grid{grid-template-columns:1fr}
+      nav{flex-direction:column;align-items:flex-start;gap:.5rem}
+      .hero{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">หมวดหนังสือเรียน</div>
+        <div class="nav-links">
+          <a class="btn" href="#">หน้าแรก</a>
+          <a class="btn" href="#contact">ติดต่อ</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>ยินดีต้อนรับสู่หน้าเว็บพื้นฐาน</h1>
+        <p>ไฟล์นี้เป็นตัวอย่างหน้าเว็บ HTML + CSS เล็ก ๆ ที่อ่านง่าย ปรับแต่งได้ และรองรับมือถือ</p>
+        <p><button id="cta">คลิกเพื่อทักทาย</button></p>
+      </div>
+
+      <div id="features" class="grid">
+        <div class="card">
+          <h3>เรียบง่าย</h3>
+          <p>โครงสร้าง HTML เข้าใจง่าย เหมาะสำหรับผู้เริ่มต้น</p>
+        </div>
+        <div class="card">
+          <h3>ตอบสนอง</h3>
+          <p>มีสไตล์พื้นฐานที่ปรับ layout ให้เหมาะกับหน้าจอขนาดต่าง ๆ</p>
+        </div>
+        <div class="card">
+          <h3>ปรับแต่งได้</h3>
+          <p>แก้สี ฟอนต์ และเพิ่มส่วนประกอบตามที่ต้องการได้ทันที</p>
+        </div>
+      </div>
+  <footer>
+    <div class="container">© <span id="year"></span> เว็บตัวอย่าง — สร้างด้วย HTML</div>
+  </footer>
+</body>
+</html>
