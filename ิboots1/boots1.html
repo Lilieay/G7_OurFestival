@@ -4,38 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>หน้าเว็บพื้นฐาน</title>
-  <style>
-    :root{
-      --bg:#f6f7fb; --card:#ffffff; --accent:#0066ff; --text:#0b1220;
-    }
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.5;background-image:url("/resource/hallbgboots1.jpg");background-size: cover;background-position: center;height: 100vh;background-repeat: no-repeat;}
-    header{background:linear-gradient(90deg,var(--accent),#4fb3ff);color:#fff;padding:1rem 1.25rem}
-    .container{max-width:1000px;margin:0 auto;padding:1rem}
-    nav{display:flex;gap:1rem;align-items:center;justify-content:space-between}
-    .brand{font-weight:700}
-    .nav-links{display:flex;gap:.75rem}
-    a.btn{background:rgba(255,255,255,.15);color:#fff;padding:.5rem .75rem;border-radius:8px;text-decoration:none}
-
-    main{padding:2rem 1.25rem}
-    .hero{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
-    .card{background:var(--card);padding:1rem;border-radius:12px;box-shadow:0 6px 20px rgba(12,20,40,0.06)}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
-
-    footer{padding:1rem;text-align:center;color:#6b7280}
-
-    @media (max-width:800px){
-      .grid{grid-template-columns:1fr}
-      nav{flex-direction:column;align-items:flex-start;gap:.5rem}
-      .hero{grid-template-columns:1fr}
-    }
-    #banner{
-      width: 50%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  </style>
+  <link rel="stylesheet" href="/CSS/style_booth1.css">
 </head>
 <body>
   <header>
@@ -69,6 +38,7 @@
         <div class="card">
           <h3>A-Level คณิตศาสตร์ประยุกต์ by ติวเตอร์แป๋ม</h3>
           <img src="/resource/Math1.jpg" alt="Math1" id="banner">
+          <div class="column"></div>
         </div>
       </div>
   <footer>
