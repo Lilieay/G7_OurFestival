@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Feedback Form</title>
+    <style>
+    body {
+        background-image: url('/resource/BG\ Form.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feedback-card {
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 500px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .btn-gradient {
+        background: linear-gradient(to right, #f89c13, #8c6e41);
+        border: none;
+        color: white;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="feedback-card">
+        <h2 class="text-center fw-bold mb-3 mt-3">แบบฟอร์มแสดงความคิดเห็นงาน G-7 Book Fair</h2>
+        <div class="m-3">
+            <form class="row g-3 was-validated" novalidate>
+                <div class="col-12">
+                    <label for="inputName" class="form-label">ชื่อ-สกุล</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="เช่น นายอิ่มสุข สบายใจ" required>
+                </div>
+                <div class="col-12">
+                    <label for="inputRating" class="form-label">ให้คะแนนความพึงพอใจ</label>
+                    <select class="form-select" id="inputRating">
+                        <option selected disabled>เลือก...</option>
+                        <option>ดีมาก</option>
+                        <option>ดี</option>
+                        <option>พอใช้</option>
+                        <option>ควรปรับปรุง</option>
+                        <option>แย่</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="inputFavorite" class="form-label">หมวดหมู่ที่ชอบมากที่สุด</label>
+                    <select id="inputFavorite" class="form-select">
+                        <option selected disabled>เลือก...</option>
+                        <option>หนังสือเรียน</option>
+                        <option>หนังสือพัฒนาตนเอง</option>
+                        <option>หนังสือนิยายและวรรณกรรม</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="inputComment" class="form-label">ข้อเสนอแนะเพิ่มเติม</label>
+                    <input type="text" class="form-control" id="inputComment" placeholder="เช่น อยากให้เพิ่มหมวดหมู่ร้าน หรือขยายเวลาเปิดงาน">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                        <label class="form-check-label" for="gridCheck">
+                            ยืนยันว่าข้าพเจ้ายินยอมให้งาน G-7 Book Fair เก็บข้อมูลความคิดเห็นนี้
+                        </label>
+                        <div class="invalid-feedback">กรุณาติ๊กเพื่อยืนยันความยินยอม</div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-gradient">ส่งความคิดเห็น</button>
+                </div>
+            </form>
+        
+        </div>
+    </div>
+
+</body>
+
+</html>
