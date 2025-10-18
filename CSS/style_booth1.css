@@ -77,8 +77,49 @@
       .hero{grid-template-columns:1fr}
     }
     #banner{
-      width: 50%;
+      width: 100%;
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
+     .book-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 25px; 
+  }
+  .book-card {
+    display: flex;
+    align-items: center;
+    background: #ffffffcc;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    padding: 20px 25px;
+    width: 520px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    gap: 20px;
+  }
+
+  .book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  }
+
+  .book-card img {
+    width: 130px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+
+  .book-info h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+
+  .book-info p {
+    margin: 0;
+    font-size: 15px;
+    color: #555;
+  }
