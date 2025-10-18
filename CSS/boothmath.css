@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;   
+    background: linear-gradient(to top, #0a000e 0%, #3d127d 40%, #b77bf3 100%);
+    background-attachment: fixed;
+    color: white;
+    background-attachment: fixed;
+}
+header{
+    .book{
+        .container-box{
+            align-items: center;
+            text-align: center;
+            justify-items: center;
+        }
+            .bookbox{
+                width: 200px;
+                height: 150px;
+                width: clamp(200px, 60vw, 500px); 
+                height: clamp(20px, 50vw, 150px);
+                background-color: rgb(0, 0, 0, 0.8);
+                border-radius: 30px;
+                margin: 10px;
+                padding: 0;
+                align-items: center;
+               text-align: center;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+                    h1{
+                    color: aliceblue;
+                    margin: 0;
+                    }
+        }
+    }
+.head span {
+    font-size: clamp(1.8rem, 6vw, 6rem);
+    font-family: cursive;
+    color: white;
+    animation: animate 3s linear infinite;
+}
+}
+nav{
+    .container-fluid{
+        padding: 0;
+        align-items: center;
+    }
+    .btn{
+        background: linear-gradient(to top, #ffffff 0%, #9687ad 40%, #7907ea 100%);
+        width: clamp(60px, 60vw, 170px);
+        
+    }
+    .btn a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-family: cursive;
+            font-size: clamp(1rem, 2vw, 1.5rem);
+        }
+        .boxabout{
+            background-color: rgba(255, 255, 255, 0.8);
+            width: clamp(200px, 60vw, 600px);
+            height: clamp(100px, 60vw, 250px);
+             border-radius: 10px;
+             justify-content: center; 
+            align-items: center;
+            text-align: center;
+            display: flex;
+            font-family: cursive;
+        }
+        .about{
+            h2{
+            font-size: clamp(1rem, 6vw, 2rem);
+        }
+        p{
+            font-size: clamp(0.7rem, 2vw, 1.1rem);
+            line-height: 1.6;
+        }
+        }
+        .about span{
+            color:#f34423;
+        }
+}
