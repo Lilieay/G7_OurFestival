@@ -123,3 +123,27 @@
     font-size: 15px;
     color: #555;
   }
+  .button-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .book-card .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    color: rgb(27, 27, 27);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 102, 255, 0.3);
+  }
+  .btn:hover {
+    background: linear-gradient(135deg, #947ccc, #5480e6);
+    transform: translateY(-4px) scale(1.05); 
+    box-shadow: 0 8px 18px rgba(0, 102, 255, 0.4);
+  }
+  .btn:active {
+    transform: scale(0.97);
+  }
