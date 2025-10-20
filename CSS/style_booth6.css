@@ -1,0 +1,12 @@
+:root{
+    --bg:#e7bc89; 
+    --bgcard:#ffffff;
+    --text:#675b31; 
+    --texthead:#6b0302; 
+    --btn:#c55b31;
+}
+
+body {
+    margin: 0px;
+    font-family: "poppin",sans-serif;
+}
