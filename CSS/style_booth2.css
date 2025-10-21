@@ -51,3 +51,20 @@ body header {
 .boothhome p {
     font-size: 20px;
 }
+
+.product h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+}
+.product img {
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+}
+.card {
+    
+}
