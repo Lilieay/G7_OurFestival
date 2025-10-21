@@ -21,10 +21,12 @@ body header {
 }
 .stickyhead {
     margin: 0px;
-    position: sticky;
+    position:sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: 0;
+    z-index: 1000;
 }
 .stickyhead button {
     padding: 5px 15px;
@@ -32,7 +34,20 @@ body header {
     
 }
 .boothhome {
-    background-color: aqua;
+    background-color: rgb(29, 97, 97);
      margin:  0px;
-     
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+.boothhome h1 {
+    font-size: 100px;
+
+}
+.boothhome p {
+    font-size: 20px;
 }
