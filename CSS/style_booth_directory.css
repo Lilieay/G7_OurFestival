@@ -92,3 +92,14 @@ body header {
 .card-content a:hover {
     background-color: #54302a;
 }
+footer {
+    background-color:#ce3622 ;
+    padding: 5px;
+    margin-top: 10px;
+    
+}
+footer p {
+    display: flex;
+    justify-content: end;
+    color: aliceblue;
+}
