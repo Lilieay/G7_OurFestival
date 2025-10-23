@@ -10,6 +10,7 @@
     <style>
     body {
         background: linear-gradient(to top, #3b1a00 0%, #ff6a00 40%, #ff9d00 100%);
+        background-size: cover;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -35,13 +36,15 @@
 
 <body>
     <div class="feedback-card">
+        <div class="m-3" style="max-width: 700px;">
         <h2 class="text-center fw-bold mb-3 mt-3">แบบฟอร์มแสดงความคิดเห็นงาน G-7 Book Fair</h2>
-        <div class="m-3">
+
             <form class="row g-3 was-validated" novalidate>
                 <div class="col-12">
                     <label for="inputName" class="form-label">ชื่อ-สกุล</label>
                     <input type="text" class="form-control" id="inputName" placeholder="เช่น นายอิ่มสุข สบายใจ" required>
                 </div>
+
                 <div class="col-12">
                     <label for="inputRating" class="form-label">ให้คะแนนความพึงพอใจ</label>
                     <select class="form-select" id="inputRating">
@@ -53,6 +56,7 @@
                         <option>แย่</option>
                     </select>
                 </div>
+
                 <div class="col-12">
                     <label for="inputFavorite" class="form-label">หมวดหมู่ที่ชอบมากที่สุด</label>
                     <select id="inputFavorite" class="form-select">
@@ -62,10 +66,12 @@
                         <option>หนังสือนิยายและวรรณกรรม</option>
                     </select>
                 </div>
+
                 <div class="col-12">
                     <label for="inputComment" class="form-label">ข้อเสนอแนะเพิ่มเติม</label>
                     <input type="text" class="form-control" id="inputComment" placeholder="เช่น อยากให้เพิ่มหมวดหมู่ร้าน หรือขยายเวลาเปิดงาน">
                 </div>
+
                 <div class="col-12">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="gridCheck" required>
@@ -75,9 +81,9 @@
                         <div class="invalid-feedback">กรุณาติ๊กเพื่อยืนยันความยินยอม</div>
                     </div>
                 </div>
-                <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary btn-gradient">ส่งความคิดเห็น</button>
-                </div>
+
+                <button type="submit" class="btn btn-gradient">ส่งความคิดเห็น</button>
+
             </form>
         
         </div>
