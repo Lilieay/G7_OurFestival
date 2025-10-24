@@ -1,4 +1,7 @@
 /*all*/
+html {
+    scroll-behavior: smooth;
+}
 .stickyhead {
     margin: 0px;
     position:sticky;
