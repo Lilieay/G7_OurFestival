@@ -28,7 +28,12 @@ html {
     transform:scale(1.1);
     cursor: pointer;
 }
+body header{
+    background-color:#D8C3A5;
+}
+/*booth3*/
 body.booth3{
     background-image: url(../resource/booth3_resource/background5.jpg);
+    
 }
 /*book1*/
