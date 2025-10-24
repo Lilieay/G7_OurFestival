@@ -61,4 +61,16 @@ body.booth3{
     margin: 0;
     text-align: center;
 }
+.book-card {
+  display: block;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.book-card:hover {
+  transform: scale(1.03);
+}
+.container{
+    margin-top: 40px;
+}
 /*book1*/
