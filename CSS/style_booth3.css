@@ -1,0 +1,64 @@
+/*all*/
+@font-face{
+    font-family: 'Samurai';
+    src:url(../resource/booth3_resource/EDMuzazhi/EDMuzazhi.ttf) format('truetype');
+     font-weight: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+.stickyhead {
+    margin: 0px;
+    position:sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+}
+.stickyhead h1 {
+    font-size: 50px;
+    color: whitesmoke;
+    
+}
+.stickyhead button {
+    padding: 10px 20px;
+    font-size: 25px;
+    margin:0px 15px;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: none;
+}
+.stickyhead button:hover {
+    transform:scale(1.1);
+    cursor: pointer;
+}
+body header{
+    background-color:#D8C3A5;
+}
+/*booth3*/
+body.booth3{
+    background-image: url(../resource/booth3_resource/background4.jpg);
+    
+}
+.shop-title {
+     position: fixed;
+    top: 90px;         /* ระยะห่างจากด้านบน (ปรับได้) */
+    left:5px;     /* ชิดซ้ายของหน้าจอ */
+    background-image: url(../resource/booth3_resource/background_paper.jpg);
+    background-size: cover;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: black 5px solid;
+    font-family: 'Samurai', sans-serif;
+    z-index: 10;        /* ให้อยู่เหนือรูปพื้นหลัง */
+}
+
+.Shop_name {
+    font-size: 85px;/* ขนาดตัวอักษร */
+    line-height: 1;      /* ระยะห่างตัวอักษรแนวตั้งให้กระชับ */
+    letter-spacing: 0;   /* ไม่ต้องเว้นช่องเยอะ */
+    margin: 0;
+    text-align: center;
+}
+/*book1*/

@@ -1,3 +1,5 @@
+/* font */
+@import url(https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Mitr:wght@200;300;400;500;600;700&family=Playpen+Sans+Thai:wght@100..800&display=swap);
 body{
     margin: 0;
     padding: 0;
@@ -49,8 +51,13 @@ nav{
     .btn{
         background: linear-gradient(to top, #ffffff 0%, #9687ad 40%, #7907ea 100%);
         width: clamp(60px, 60vw, 170px);
-        
+        transform: translateY(-5px);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
+    .btn:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(255, 255, 253, 0.25);
+     }
     .btn a{
             color: rgb(0, 0, 0);
             text-decoration: none;
@@ -66,18 +73,57 @@ nav{
             align-items: center;
             text-align: center;
             display: flex;
-            font-family: cursive;
+            font-family: cursive; 
         }
         .about{
             h2{
             font-size: clamp(1rem, 6vw, 2rem);
+            font-family: Mitr;
+            font-weight: 500;
         }
         p{
-            font-size: clamp(0.7rem, 2vw, 1.1rem);
+            font-size: clamp(0.7rem, 2vw, 1.2rem);
             line-height: 1.6;
+            font-family: Mitr;
+        }
+        p strong{
+            font-family: cursive;
         }
         }
         .about span{
             color:#f34423;
+            font-size: clamp(1rem, 6vw, 2rem);
+            font-family: cursive;
         }
+}
+section{
+    .col{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        font-family: Mitr;
+        padding: 10px;
+    }
+    .card{
+        width: 15rem;
+    }
+    .namebook{
+        font-weight: 500;
+        margin: 0;
+    }
+    .titlebook{
+         font-size: clamp(0.9rem, 2vw, 0.9rem);
+        color: rgb(98, 96, 96);
+        margin: auto;       
+    }
+    .coin{
+        margin: 0;
+        
+    }
+    .card-text{
+      display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; 
+    }
 }
