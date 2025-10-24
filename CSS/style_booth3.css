@@ -1,0 +1,26 @@
+.stickyhead {
+    margin: 0px;
+    position:sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+}
+.stickyhead h1 {
+    font-size: 50px;
+    color: whitesmoke;
+    
+}
+.stickyhead button {
+    padding: 10px 20px;
+    font-size: 25px;
+    margin:0px 15px;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: none;
+}
+.stickyhead button:hover {
+    transform:scale(1.1);
+    cursor: pointer;
+}
