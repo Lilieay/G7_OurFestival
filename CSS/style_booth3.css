@@ -36,4 +36,17 @@ body.booth3{
     background-image: url(../resource/booth3_resource/background4.jpg);
     
 }
+.shop-title{
+     display: inline-block;
+    background-color: #D8C3A5;
+    padding: 10px 30px;
+    margin: 20px auto;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    border-radius: 8px;          
+    text-align: center;
+    display: block;
+    width: fit-content;
+}
 /*book1*/
