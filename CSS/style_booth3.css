@@ -18,7 +18,7 @@ html {
 }
 .stickyhead h1 {
     font-size: 50px;
-    color: whitesmoke;
+    color:black;
     
 }
 .stickyhead button {
@@ -60,5 +60,17 @@ body.booth3{
     letter-spacing: 0;   /* ไม่ต้องเว้นช่องเยอะ */
     margin: 0;
     text-align: center;
+}
+.book-card {
+  display: block;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.book-card:hover {
+  transform: scale(1.03);
+}
+.container{
+    margin-top: 40px;
 }
 /*book1*/
