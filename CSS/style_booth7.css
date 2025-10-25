@@ -15,28 +15,39 @@ body {
     color: #e6e6e6;
 }
 
-.top-bar {
+body header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
+        url("../resource/booth2_resources/booth2_stickyhead.jpg");
+    margin: 0px;
+    padding: 10px 25px;
+    
+}
+.stickyhead {
+    margin: 0px;
+    position:sticky;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: rgba(26, 29, 35, 0.9);
-    color: #f1f1f1;
-    padding: 10px 30px;
-    font-size: 14px;
-    border-bottom: 1px solid #2c2f36;
-    backdrop-filter: blur(6px);
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+}
+.stickyhead h1 {
+    font-size: 50px;
+    color: whitesmoke;
+    
+}
+.stickyhead button {
+    padding: 10px 20px;
+    font-size: 25px;
+    margin:0px 15px;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: none;
 }
 
-.top-bar .contact span {
-    margin-right: 20px;
-    color: #cfcfcf;
-}
-
-.top-bar .links a {
-    color: #d8d8d8;
-    text-decoration: none;
-    margin-left: 20px;
-    transition: color 0.3s ease;
+.stickyhead button:hover {
+    transform:scale(1.1);
+    cursor: pointer;
 }
 
 .book-section {

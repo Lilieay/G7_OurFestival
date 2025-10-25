@@ -9,7 +9,41 @@ body{
     color: white;
     background-attachment: fixed;
 }
-header{
+body header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
+        url("../resource/booth2_resources/booth2_stickyhead.jpg");
+    margin: 0px;
+    padding: 10px 25px;
+    
+}
+.stickyhead {
+    margin: 0px;
+    position:sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+}
+.stickyhead h1 {
+    font-size: clamp(1rem, 6vw, 4rem);
+    color: rgb(255, 255, 255);
+    
+}
+.stickyhead button {
+    padding: 10px 10px;
+    font-size: clamp(0.8rem, 3vw, 2rem);
+    margin:2px 10px;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: none;
+    color: #000000;
+}
+.stickyhead button:hover {
+    transform:scale(1.1);
+    cursor: pointer;
+}
+main{
     .book{
         .container-box{
             align-items: center;
@@ -44,11 +78,11 @@ header{
 }
 }
 nav{
-    .container-fluid{
+    /* .container-fluid{
         padding: 0;
         align-items: center;
-    }
-    .btn{
+    } */
+    /* .btn{
         background: linear-gradient(to top, #ffffff 0%, #9687ad 40%, #7907ea 100%);
         width: clamp(60px, 60vw, 170px);
         transform: translateY(-5px);
@@ -63,7 +97,7 @@ nav{
             text-decoration: none;
             font-family: cursive;
             font-size: clamp(1rem, 2vw, 1.5rem);
-        }
+        } */
         .boxabout{
             background-color: rgba(255, 255, 255, 0.8);
             width: clamp(200px, 60vw, 600px);
