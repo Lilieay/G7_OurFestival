@@ -31,7 +31,7 @@
     .container {
       max-width: 1000px;
       margin: 0 auto;
-      padding: 1rem
+      padding: 1rem;
     }
 
     nav {
@@ -117,6 +117,7 @@
       display: flex;
       flex-direction: column;
       gap: 25px;
+      align-items: center;
     }
 
     .book-card {
@@ -252,7 +253,7 @@
       --pre-shadow: 0 8px 24px rgba(17, 51, 68, 0.08);
     }
 
-    
+
     .preorder-wrapper {
       max-width: 1100px;
       margin: 2rem auto;
@@ -267,7 +268,7 @@
       font-family: "Sarabun", "Poppins", system-ui, sans-serif;
     }
 
-  
+
     .preorder-left {
       width: 340px;
       flex: 0 0 340px;
@@ -300,7 +301,7 @@
       margin-top: 6px;
     }
 
-    
+
     .preorder-right {
       flex: 1;
       display: flex;
@@ -420,7 +421,7 @@
       font-size: 14px;
     }
 
-    
+
     @media (max-width: 900px) {
       .preorder-wrapper {
         flex-direction: column;
@@ -441,4 +442,16 @@
         align-items: flex-start;
         gap: 6px;
       }
+    }
+
+    .author {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .rain {
+      background: linear-gradient(90deg, #00b4db, #ff69b4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
     }
