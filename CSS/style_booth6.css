@@ -192,3 +192,15 @@ body {
         }
     }
 }
+
+.footer{
+    background-color: #724972;
+    height: 2rem;
+    
+    .footer-legal{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: var(--text);
+    }
+}
