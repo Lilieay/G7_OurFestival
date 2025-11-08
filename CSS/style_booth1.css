@@ -1,6 +1,6 @@
     :root {
       --bg: #ffffff;
-      --card: #ffffff;
+      --card: transparent;
       --accent: #0066ff;
       --text: #0b1220;
     }
@@ -10,7 +10,7 @@
     }
 
     body {
-      font-family: Inter, system-ui, Arial, sans-serif;
+      font-family: system-ui, Arial, sans-serif;
       margin: 0;
       background: var(--bg);
       color: var(--text);
@@ -19,7 +19,7 @@
       background-size: cover;
       background-position: center;
       height: 100vh;
-      background-repeat: no-repeat;
+      
     }
 
     header {
@@ -454,4 +454,15 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: bold;
+    }
+
+    .LOGO {
+      display: block;
+      margin: 0 auto;  
+      width: 25%;    
+      height: auto;
+    }
+    .LINE {
+      font-size: 18px;
+      color:#ffffff;
     }
