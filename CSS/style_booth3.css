@@ -18,7 +18,7 @@ html {
 }
 .stickyhead h1 {
     font-size: 50px;
-    color:black;
+    color:white;
     
 }
 .stickyhead button {
@@ -34,7 +34,7 @@ html {
     cursor: pointer;
 }
 body header{
-    background-color:#D8C3A5;
+    background-image: url(../resource/booth2_resources/booth2_stickyhead.jpg);
 }
 /*booth3*/
 body.booth3{
