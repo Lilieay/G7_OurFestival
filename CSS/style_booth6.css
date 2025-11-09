@@ -90,7 +90,7 @@ body {
 }
 
 .book-list {
-    background-image: url(/resource/booth6_resource/bg1-booth6.jpg);
+    background-image: url(../resource/booth6_resource/bg1-booth6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 2rem;
