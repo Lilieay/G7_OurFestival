@@ -1,15 +1,7 @@
-/*header {
-    background-color: #ffaa00;
-    color: white;
-    padding: 20px 0;
-    border-bottom: 3px solid #0056b3;
-    background-image: url("/resource/HalloweenCover.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 150px;
-    color: rgb(255, 255, 255); 
-    text-shadow: 2px 2px 6px rgb(147, 128, 128);   
-}*/
+@font-face {
+    font-family: "H1Font";
+    src: url(../resource/index_resource/Storm\ Gust.ttf) format(truetype);
+}
 
 @media (min-width: 0px) {
     html {
@@ -35,6 +27,62 @@
     }
 }
 
+h2 {
+    margin: 2px 0px;
+    font-size: 2rem;
+}
+
+
+
+#header {
+    background:url(../resource/index_resource/backgroud.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 0px) {
+    .stickyhead-mobile {
+        display: block;
+    }
+
+    .stickyhead-desktop {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    #mobile {
+        width: 100%;
+        display: block;
+        position: fixed;
+        z-index: 1000;
+    }
+}
+
+@media (min-width: 1144px) {
+    .stickyhead-mobile {
+        display: none;
+    }
+
+    .stickyhead-desktop {
+        display: flex;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    #mobile {
+        display: none;
+    }
+}
+
 p {
     font-size: 1rem;
     margin: 0%;
@@ -46,9 +94,53 @@ p {
     outline: 0%;
 }
 
+@media (min-width: 0px) {
+    h1 {
+        text-shadow: 6px 2px black;
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 576px) {
+    h1 {
+        text-shadow: 7px 3px black;
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        text-shadow: 8px 5px black;
+        font-size: 4.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        text-shadow: 9px 8px black;
+        font-size: 5.3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 6.8rem;
+    }
+}
+
+
+
 h1 {
-    text-align: center;
-    color: #725800;
+
+    font-family: "H1Font", sans-serif;
+    color: rgb(250, 93, 1);
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 body {
@@ -63,21 +155,45 @@ body {
     overflow-x: hidden;
 }
 
-#Banner {
+.stickyhead-desktop {
     width: 100%;
-    height: 90vh;
-    margin: 0%;
-    padding: 0%;
+    padding: 5px 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
+        url("../resource/booth2_resources/booth2_stickyhead.jpg");
+    margin: 0px;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
 }
 
-#Bannerleft {
-    margin: 0px;
-    height: 90vh;
-    width: 100%;
-    padding-top: 4rem;
-    background: #412B6B;
-    background: linear-gradient(159deg, rgba(65, 43, 107, 1) 62%, rgba(33, 24, 50, 1) 100%);
+.stickyhead-desktop h2 {
+    font-size: 50px;
+    color: whitesmoke;
 
+}
+
+.stickyhead-desktop a {
+    background: white;
+    padding: 10px 20px;
+    font-size: 25px;
+    margin: 0px 15px;
+    border-radius: 35px;
+    transition: 0.3s;
+    border: none;
+}
+
+.stickyhead-desktop a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.stickyhead-mobile {
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #text1 {
@@ -102,7 +218,6 @@ body {
 @media (min-width: 0px) {
     #img2 {
         justify-self: center;
-        
         display: block;
         width: 90%;
         opacity: 1;
@@ -112,45 +227,8 @@ body {
 @media (min-width: 768px) {
     #img2 {
         display: none;
-        
+
     }
-}
-
-#navi {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-}
-
-#navi a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 25px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    border-radius: 30px;
-    background: linear-gradient(45deg, #ff6a00, #ff9500);
-    box-shadow: 0 0 10px rgba(255, 106, 0, 0.6);
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-#navi a:hover {
-    transform: scale(1.1);
-    background: linear-gradient(45deg, #ff9500, #ff6a00);
-    box-shadow: 0 0 20px rgba(255, 180, 0, 0.8), 0 0 40px rgba(255, 100, 0, 0.5);
-}
-
-#navi a:active {
-    transform: scale(0.95);
-}
-
-#navi a {
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
 }
 
 * {
@@ -172,7 +250,6 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 25px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -195,21 +272,11 @@ body {
     color: #fff;
 }
 
-.stickyhead {
-    animation: SlideRight 1s ease-out;
-}
-
-.show {
-    animation: Fadeup 5s ease;
-}
-
 .content-container {
     margin: 50px 0px;
     justify-self: center;
     width: 80%;
 }
-
-.observer {}
 
 @media (max-width: 576px) {
     .footer-content {
@@ -271,42 +338,187 @@ body {
     color: #ff6a00;
 
 }
-.muay-slider-wrap{
-  display:flex;
-  justify-content:center;   
-  align-items:center;       
-  width:100%;
-  margin: 60px 0;
-}
-.muay-slider{
-  width: min(90vw, 900px);  
-  aspect-ratio: 16 / 9;     
-  overflow:hidden;          
-  border-radius: 18px;
-  box-shadow: 0 0 30px rgba(255,182,255,.45);
-  position: relative;
-  background:#000;          
+
+.muay-slider-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 60px 0;
 }
 
-.muay-slides{
-  height:100%;
-  display:flex;             
-  animation: muay-slide 16s infinite;
+.muay-slider {
+    width: min(90vw, 900px);
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(255, 182, 255, .45);
+    position: relative;
+    background: #000;
 }
 
-.muay-slides > img{
-  flex: 0 0 100%;           
-  width:100%;
-  height:100%;
-  object-fit: cover;
-  display:block;
+.muay-slides {
+    height: 100%;
+    display: flex;
+    animation: muay-slide 16s infinite;
 }
 
+.muay-slides>img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-@keyframes muay-slide{
-  0%, 20%   { transform: translateX(0); }
-  25%, 45%  { transform: translateX(-100%); }
-  50%, 70%  { transform: translateX(-200%); }
-  75%, 95%  { transform: translateX(-300%); }
-  100%      { transform: translateX(0); }
+.TextD {
+    animation: Fadeup linear;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+}
+
+@keyframes muay-slide {
+
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+    25%,
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50%,
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75%,
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.hidden {
+    height: 0px;
+    padding: 0px;
+}
+
+@media (min-width: 0px) {
+    #navbar-bg {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
+            url("../resource/booth2_resources/booth2_stickyhead.jpg");
+        padding: 0px 10px;
+    }
+
+    .show {
+        height: 230px;
+        padding:20px 0px;
+    }
+
+    #mobile-nav {
+        translate: calc(100vw - 125px) 0px;
+        position: fixed;
+        align-items: flex-end;
+        position: fixed;
+        flex-direction: column;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        z-index: 1000;
+    }
+
+    #mobile-nav a {
+        width: 90px;
+        background: white;
+        font-size: 0.7rem;
+        margin: 0px 15px;
+        border-radius: 25px;
+        transition: 0.3s;
+        border: none;
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+@media (min-width: 576px) {
+    .show {
+        height: 260px;
+    }
+    #mobile-nav{
+        translate: calc(100vw - 135px) 0px;
+    }
+     #mobile-nav a {
+        width: 100px;
+        font-size: 0.6rem;
+     }
+}
+
+@media (min-width: 768px) {
+    #navbar-bg {
+        padding: 0px 18px;
+    }
+
+    .show {
+        height: 250px;
+    }
+    #mobile-nav{
+        translate: calc(100vw - 155px) 0px;
+    }
+    #mobile-nav a {
+        width: 110px;
+        font-size: 0.5rem;
+     }
+}
+
+@media (min-width: 992px) {
+    .show {
+        height: 270px;
+    }
+
+}
+
+#Jack-O-Lantern {
+    display: block;
+    z-index: 0;
+    margin: auto;
+    width: 200px;
+}
+
+a {
+    background: white;
+    padding: 10px 20px;
+    font-size: 25px;
+    margin: 0px 15px;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: none;
+    text-decoration: none;
+    color: #000;
+}
+
+#mobile-nav a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#navbar-bg h2 {
+    align-self: baseline;
+}
+
+#bar {
+    transition: all 0.3 ease;
+}
+
+#bar:hover {
+    color: #dfdada;
+    cursor: pointer;
+}
+
+#lastbtn {
+    margin-bottom:10px ;
 }
