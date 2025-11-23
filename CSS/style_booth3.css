@@ -1,76 +1,222 @@
-/*all*/
+
 @font-face{
     font-family: 'Samurai';
     src:url(../resource/booth3_resource/EDMuzazhi/EDMuzazhi.ttf) format('truetype');
-     font-weight: normal;
+    font-weight: normal;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
 .stickyhead {
-    margin: 0px;
-    position:sticky;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: 0;
-    z-index: 1000;
+
+    padding: 10px 30px;
 }
+
+
+body header{
+    background-image: url(../resource/booth2_resources/booth2_stickyhead.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .stickyhead h1 {
-    font-size: 50px;
+    font-size: 40px;
     color:white;
-    
+    margin: 0;
+    font-family: 'Samurai', sans-serif;
 }
+
+.stickyhead nav a {
+    text-decoration: none;
+}
+
 .stickyhead button {
-    padding: 10px 20px;
-    font-size: 25px;
-    margin:0px 15px;
+    padding: 8px 18px;
+    font-size: 18px;
+    margin:0 8px;
     border-radius: 25px;
     transition: 0.3s;
     border: none;
 }
+
 .stickyhead button:hover {
     transform:scale(1.1);
     cursor: pointer;
+    filter: brightness(1.1);
 }
-body header{
-    background-image: url(../resource/booth2_resources/booth2_stickyhead.jpg);
-}
-/*booth3*/
+
+
 body.booth3{
     background-image: url(../resource/booth3_resource/background4.jpg);
-    
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
 }
+
+
 .shop-title {
-     position: fixed;
-    top: 90px;        
-    left:5px;    
     background-image: url(../resource/booth3_resource/background_paper.jpg);
     background-size: cover;
     padding: 20px 30px;
     border-radius: 8px;
     border: black 5px solid;
     font-family: 'Samurai', sans-serif;
-    z-index: 10;        
+    z-index: 10;
 }
 
 .Shop_name {
     font-size: 70px;
-    line-height: 1;      
-    letter-spacing: 0;   
+    line-height: 1;
+    letter-spacing: 0;
     margin: 0;
     text-align: center;
 }
+
+
 .book-card {
-  display: block;
-  padding: 10px;
-  transition: transform 0.2s;
+    display: block;
+    padding: 10px;
+    transition: transform 0.25s ease;
+    text-decoration: none;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .book-card:hover {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
-.container{
-    margin-top: 40px;
+
+.book-card:hover img {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
-/*book1*/
+
+
+.books-container {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+
+.shop-title {
+    position: static;
+    margin: 15px auto 0 auto;
+    max-width: 180px;
+    text-align: center;
+}
+
+.books-container {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 575.98px) {
+    .stickyhead {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .stickyhead h1 {
+        font-size: 28px;
+    }
+
+    .stickyhead button {
+        padding: 6px 12px;
+        font-size: 14px;
+        margin: 2px 4px 2px 0;
+    }
+
+    .Shop_name {
+        font-size: 50px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+
+    .stickyhead {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .stickyhead h1 {
+        font-size: 32px;
+    }
+
+    .stickyhead button {
+        font-size: 16px;
+        padding: 6px 14px;
+    }
+
+    .shop-title {
+        position: static;
+        margin: 20px 0 0 30px; 
+        display: inline-block;
+    }
+
+    .Shop_name {
+        font-size: 60px;
+    }
+
+    .books-container {
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .shop-title {
+        position: fixed;
+        top: 90px;
+        left: 10px;
+        margin: 0;
+    }
+
+    .Shop_name {
+        font-size: 70px;
+    }
+
+    .books-container {
+        margin-top: 60px;
+        margin-left: 260px;
+    }
+
+    .stickyhead h1 {
+        font-size: 40px;
+    }
+
+    .stickyhead button {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .books-container {
+        max-width: 1100px;
+    }
+}
