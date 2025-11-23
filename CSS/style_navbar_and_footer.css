@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "H2Name";
+    src: url(../resource/index_resource/PlayfairDisplay-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "SemiBaiJamjuree";
+    src: url(../resource/index_resource/BaiJamjuree-SemiBold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "RegularBaiJamjuree";
+    src: url(../resource/index_resource/BaiJamjuree-Regular.ttf) format(truetype);
+}
+
+.name {
+    font-family: "H2Name", sans-serif;
+    margin: 0px;
+    font-weight: 700;
+    font-size: clamp( 38px, 1.8rem ,56px);
+}
+
+footer {
+    background: linear-gradient(160deg, #662b00 0%, #3b1a00 50%, #1c0d00 100%);
+    color: #b2b2b2;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-copyright {
+    margin: 0;
+}
+
+.footer-social a {
+    color: #b2b2b2;
+    font-size: 18px;
+    margin-left: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.hidden {
+    height: 0px;
+    padding: 0px;
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (min-width: 0px) {
+    #navbar-bg {
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
+            url("../resource/booth2_resources/booth2_stickyhead.jpg");
+        padding: 5px 10px 5px 10px;
+    }
+
+    .show {
+        height: 230px;
+        padding: 20px 0px;
+    }
+
+    #mobile-nav {
+        translate: calc(100vw - 125px) 0px;
+        position: fixed;
+        align-items: flex-end;
+        position: fixed;
+        flex-direction: column;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        z-index: 1000;
+    }
+
+    #mobile-nav a {
+        width: 90px;
+        background: white;
+        font-size: 0.7rem;
+        margin: 0px 15px;
+        border-radius: 25px;
+        transition: 0.3s;
+        border: none;
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+@media (min-width: 576px) {
+    .show {
+        height: 260px;
+    }
+
+    #mobile-nav {
+        translate: calc(100vw - 135px) 0px;
+    }
+
+    #mobile-nav a {
+        width: 100px;
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #navbar-bg {
+        padding: 5px 10px;
+    }
+
+    .show {
+        height: 250px;
+    }
+
+    #mobile-nav {
+        translate: calc(100vw - 155px) 0px;
+    }
+
+    #mobile-nav a {
+        width: 110px;
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .show {
+        height: 270px;
+    }
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbtn a {
+    font-family: "RegularBaiJamjuree", sans-serif;
+    background: white;
+    padding: 10px 20px;
+    font-size: 25px;
+    margin: 0px 15px;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: none;
+    text-decoration: none;
+    color: #000;
+}
+
+@media (min-width: 0px) {
+    .stickyhead-mobile {
+        display: block;
+    }
+
+    .stickyhead-desktop {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    #mobile {
+        width: 100%;
+        display: block;
+        position: fixed;
+        z-index: 1000;
+    }
+}
+
+@media (min-width: 1166px) {
+    .stickyhead-mobile {
+        display: none;
+    }
+
+    .stickyhead-desktop {
+        display: flex;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    #mobile {
+        display: none;
+    }
+}
+
+
+.stickyhead-desktop {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
+        url("../resource/booth2_resources/booth2_stickyhead.jpg");
+    margin: 0px;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+}
+
+.stickyhead-desktop h2 {
+    color: whitesmoke;
+}
+
+.stickyhead-mobile {
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+@media (min-width: 0px) {
+   .navbtn a {
+    padding: 10px 20px;
+}
+}
+
+@media (min-width: 1166px) {
+   .navbtn a {
+    padding: 5px 20px;
+}
+}
+
+.navbtn a {
+    background: white;
+    
+    font-size: 25px;
+    margin: 0px 15px;
+    border-radius: 35px;
+    transition: 0.3s;
+    border: none;
+}
+
+.navbtn a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#navbar-bg h2 {
+    align-self: baseline;
+}
+
+#bar {
+    font-size: clamp( 34px, 1.7rem ,52px);
+    margin: 0px;
+    transition: all 0.3 ease;
+}
+
+#bar:hover {
+    color: #dfdada;
+    cursor: pointer;
+}
+
+.navbar {
+    padding: 5px 18px 5px 10px;
+}
