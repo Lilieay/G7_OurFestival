@@ -14,33 +14,35 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
     <script src="JS/particles.min.js"></script>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style_navbar_and_footer.css">
     <link rel="stylesheet" href="https://fontawesome.com/icons/house?f=classic&s=solid">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 
 <body>
+    <!--Navbar Desktop-->
     <header class="stickyhead-desktop navbar">
-        <h2 class="nav-text">Boo(k) Night! Fair</h2>
-        <nav id="desktop-nav">
+        <h2 class="name">Boo(k) Night! Fair</h2>
+        <nav id="desktop-nav" class="navbtn">
             <a href="index.html">Home</a>
             <a href="booth_directory/booth_directory.html">Booth</a>
             <a href="Form/Register.html">Register</a>
             <a href="Form/Feedback.html">Feedback</a>
         </nav>
     </header>
+    <!--Navbar Mobile-->
     <div id="mobile">
-        <header class="stickyhead-mobile navbar">
-            <div class="d-flex justify-content-between align-items-baseline" id="navbar-bg">
-                <h2 class="nav-text">Boo(k) Night! Fair</h2>
-                <h2 class="nav-text"><i class="fa-solid fa-bars" id="bar"></i></h2>
+        <header class="stickyhead-mobile">
+            <div class="d-flex justify-content-between align-items-baseline navbar" id="navbar-bg">
+                <h2 class="name">Boo(k) Night! Fair</h2>
+                <h2 id="bar"><i class="fa-solid fa-bars" ></i></h2>
             </div>
         </header>
-        <nav id="mobile-nav" class="text-center hidden">
+        <nav id="mobile-nav" class="text-center hidden navbtn">
             <a href="index.html">Home</a>
             <a href="booth_directory/booth_directory.html">Booth</a>
             <a href="Form/Register.html">Register</a>
-            <a href="Form/Feedback.html" id="lastbtn">Feedback</a>
+            <a href="Form/Feedback.html">Feedback</a>
         </nav>
     </div>
     <!--Header-->
@@ -48,7 +50,7 @@
         <h1 class="FadeUp">Boo(k) Night Fair</h1>
     </div>
     <!--Section 2-->
-    
+
     <div id="bg-2">
         <div id="particle1"></div>
         <img src="resource/index_resource/web.svg" alt="" id="web">
@@ -66,12 +68,33 @@
             <h2>หนังสือเป็นแหล่งความรู้</h2>
             <p>ทุกเล่มล้วนมีพลังในการพัฒนาชีวิตและเปิดมุมมองใหม่ๆต่อโลก</p>
         </div>
-        <div>
+        <div class="container g-0 text-center" id="topbook">
+            <div class="row">
+                <h2>ขายดีที่สุด</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h3>พัฒนาตนเอง</h3>
+                    <img src="resource/booth3_resource/Darkmakmak.jpg" alt="" class="">
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3>พัฒนาตนเอง</h3>
+                    <img src="resource/booth3_resource/DarkSide.jpg" alt="" class="">
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3>พัฒนาตนเอง</h3>
+                    <img src="resource/booth3_resource/Darkmakmak.jpg" alt="" class="book">
+                </div>
+            </div>
+        </div>
+        <div class="container g-0 text-center" id="topbook">
             <p class="text-center"><strong>จุดเริ่มต้นของโครงการ:</strong> งานหนังสือแฟร์ Boo(k) Night Fair
                 จัดขึ้นโดยกลุ่มนักศึกษาผู้รักการอ่านและต้องการสร้างพื้นที่แห่งการแบ่งปันความรู้</p>
-            <p class="text-center"><strong>แนวคิดสำคัญ:</strong> “หนังสือไม่ควรอยู่แค่บนชั้น แต่ควรอยู่ในมือของทุกคน”
+            <p class="text-center"><strong>แนวคิดสำคัญ:</strong> “หนังสือไม่ควรอยู่แค่บนชั้น
+                แต่ควรอยู่ในมือของทุกคน”
             </p>
-            <p class="text-center"><strong>กิจกรรมภายในงาน:</strong> ร้านจำหน่ายหนังสือ นวนิยาย หนังสือเรียน สินค้าทำมือ
+            <p class="text-center"><strong>กิจกรรมภายในงาน:</strong> ร้านจำหน่ายหนังสือ นวนิยาย หนังสือเรียน
+                สินค้าทำมือ
                 และกิจกรรมแลกเปลี่ยนประสบการณ์การอ่าน
             </p>
             <p class="text-center"><strong>เป้าหมาย:</strong> ให้หนังสือเป็นจุดเริ่มต้นของแรงบันดาลใจ
@@ -92,7 +115,7 @@
                 <p>6809617167 นายไทยุทธ พรชัย</p>
                 <p>6809617241 นายพงศภัค เกตุพันธ์</p>
                 <p>6809617290 นายภูบดี ศรีธัญ</p>
-                <p>6809617332 นางสาวกฤษกร แจ่มอรุณ</p>
+                <p>6809617332 นางสาวรมณ ประภาพรสุข</p>
                 <p>6809617381 นายวรพล ปุพเพตะนันท์</p>
                 <p>6809681411 นายจีระศักดิ์ แสนขุม</p>
             </div>
@@ -111,9 +134,11 @@
         </div>
     </footer>
     </div>
+    <script src="JS/Book.js"></script>
     <script src="JS/intro.js"></script>
     <script src="JS/particle1.js"></script>
-    <script src="JS/gsap.js"></script>
+    <script src="JS/FadeUp.js"></script>
     <script src="JS/navbar.js"></script>
 </body>
+
 </html>
