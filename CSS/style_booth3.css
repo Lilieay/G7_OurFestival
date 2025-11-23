@@ -29,12 +29,12 @@ body {
 }
 
 
-body header{
-    background-image: url(../resource/booth2_resources/booth2_stickyhead.jpg);
-    background-size: cover;
-    background-position: center;
+body header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
+        url("../resource/booth2_resources/booth2_stickyhead.jpg");
+    margin: 0px;
+    padding: 10px 25px;
 }
-
 .stickyhead h1 {
     font-size: 40px;
     color:white;
