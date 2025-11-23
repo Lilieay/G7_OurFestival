@@ -1,4 +1,3 @@
-
 @font-face{
     font-family: 'Samurai';
     src:url(../resource/booth3_resource/EDMuzazhi/EDMuzazhi.ttf) format('truetype');
@@ -15,6 +14,7 @@ body {
 }
 
 
+
 .stickyhead {
     margin: 0;
     position: sticky;
@@ -28,18 +28,17 @@ body {
     padding: 10px 30px;
 }
 
-
 body header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
         url("../resource/booth2_resources/booth2_stickyhead.jpg");
     margin: 0px;
     padding: 10px 25px;
 }
+
 .stickyhead h1 {
     font-size: 40px;
     color:white;
     margin: 0;
-
 }
 
 .stickyhead nav a {
@@ -62,6 +61,7 @@ body header {
 }
 
 
+
 body.booth3{
     background-image: url(../resource/booth3_resource/background4.jpg);
     background-size: cover;
@@ -71,23 +71,28 @@ body.booth3{
 }
 
 
+
 .shop-title {
     background-image: url(../resource/booth3_resource/background_paper.jpg);
     background-size: cover;
-    padding: 20px 30px;
+    background-position: center;
+    
+    padding: 20px 40px;
     border-radius: 8px;
     border: black 5px solid;
     font-family: 'Samurai', sans-serif;
-    z-index: 10;
+
+    width: fit-content;
+    margin: 20px auto 0 auto; 
+    text-align: center;
 }
 
 .Shop_name {
-    font-size: 70px;
-    line-height: 1;
-    letter-spacing: 0;
+    font-size: 60px;
+    letter-spacing: 8px;
     margin: 0;
-    text-align: center;
 }
+
 
 
 .book-card {
@@ -113,29 +118,16 @@ body.booth3{
     box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-
 .books-container {
-    margin-top: 60px;
+    margin-top: 35px;
     margin-bottom: 40px;
 }
 
 
-.shop-title {
-    position: static;
-    margin: 15px auto 0 auto;
-    width: fit-content;
-    text-align: center;
-}
-
-.books-container {
-    margin-top: 20px;
-}
-.horizontal {
-    display: none;
-}
 
 
 @media (max-width: 575.98px) {
+
     .stickyhead {
         flex-direction: column;
         align-items: flex-start;
@@ -149,82 +141,33 @@ body.booth3{
     .stickyhead button {
         padding: 6px 12px;
         font-size: 14px;
-        margin: 2px 4px 2px 0;
     }
 
     .Shop_name {
-        font-size: 50px;
+        font-size: 40px;
+        letter-spacing: 4px;
     }
 }
 
 
 @media (min-width: 576px) and (max-width: 991.98px) {
 
-    .stickyhead {
-        flex-direction: row;
-        align-items: center;
-    }
-
     .stickyhead h1 {
         font-size: 32px;
     }
 
-    .stickyhead button {
-        font-size: 16px;
-        padding: 6px 14px;
-    }
-
-    .shop-title {
-        position: static;
-        margin: 20px 0 0 30px; 
-        display: inline-block;
-    }
-
     .Shop_name {
-        font-size: 60px;
-    }
-
-    .books-container {
-        margin-top: 30px;
-    }
-    .vertical {
-        display: none;
-    }
-
-    .horizontal {
-        display: block;
-        font-size: 50px;
-        letter-spacing: 5px;
-        text-align: center;
-        font-family: 'Samurai', sans-serif;
+        font-size: 55px;
+        letter-spacing: 6px;
     }
 }
 
 
 @media (min-width: 992px) {
 
-    .shop-title {
-        position: fixed;
-        top: 90px;
-        left: 10px;
-        margin: 0;
-    }
-
     .Shop_name {
-        font-size: 70px;
-    }
-
-    .books-container {
-        margin-top: 60px;
-        margin-left: 260px;
-    }
-
-    .stickyhead h1 {
-        font-size: 40px;
-    }
-
-    .stickyhead button {
-        font-size: 18px;
+        font-size: 60px;
+        letter-spacing: 8px;
     }
 }
 
