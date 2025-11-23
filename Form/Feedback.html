@@ -33,63 +33,62 @@
             </button>
             </a>
 
-
         </nav>
     </header>
 
     <div class="feedback-card">
         <div class="m-3" style="max-width: 700px;">
-        <h2 class="text-center fw-bold mb-3 mt-3">แบบฟอร์มแสดงความคิดเห็นงาน G-7 Book Fair</h2>
+            <h2 class="text-center fw-bold mb-3 mt-3">แบบฟอร์มแสดงความคิดเห็นงาน G-7 Book Fair</h2>
 
-            <form class="row g-3 was-validated" novalidate>
-                <div class="col-12">
-                    <label for="inputName" class="form-label">ชื่อ-สกุล</label>
-                    <input type="text" class="form-control" id="inputName" name="fullname_feedback" placeholder="เช่น นายอิ่มสุข สบายใจ" required>
-                </div>
-
-                <div class="col-12">
-                    <label for="inputRating" class="form-label">ให้คะแนนความพึงพอใจ</label>
-                    <select class="form-select" id="inputRating" name="rating" required>
-                        <option selected disabled>เลือก...</option>
-                        <option>ดีมาก</option>
-                        <option>ดี</option>
-                        <option>พอใช้</option>
-                        <option>ควรปรับปรุง</option>
-                        <option>แย่</option>
-                    </select>
-                </div>
-
-                <div class="col-12">
-                    <label for="inputFavorite" class="form-label">ร้านที่ชอบมากที่สุด</label>
-                    <select id="inputFavorite" class="form-select" name="favorite_booth" required>
-                        <option selected disabled>เลือก...</option>
-                        <option>ร้านEduPath</option>
-                        <option>ร้านขายหนังสือเพื่อชีวิตคุณ</option>
-                        <option>ร้านKagehonya</option>
-                        <option>ร้านKanitBook</option>
-                        <option>ร้านThe Fictional Alibi</option>
-                        <option>ร้านMythos Store</option>
-                    </select>
-                </div>
-
-                <div class="col-12">
-                    <label for="inputComment" class="form-label">ข้อเสนอแนะเพิ่มเติม</label>
-                    <input type="text" class="form-control" id="inputComment" name="comment" placeholder="เช่น อยากให้เพิ่มหมวดหมู่ร้าน หรือขยายเวลาเปิดงาน">
-                </div>
-
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck" name="consent" required>
-                        <label class="form-check-label" for="gridCheck">
-                            ยืนยันว่าข้าพเจ้ายินยอมให้งาน G-7 Book Fair เก็บข้อมูลความคิดเห็นนี้
-                        </label>
-                        <div class="invalid-feedback">กรุณาติ๊กเพื่อยืนยันความยินยอม</div>
+                <form class="row g-3" action="feedback_save.php" method="POST" novalidate>
+                    <div class="col-12">
+                        <label for="inputName" class="form-label">ชื่อ-สกุล</label>
+                        <input type="text" class="form-control" id="inputName" name="fullname_feedback" placeholder="เช่น นายอิ่มสุข สบายใจ" required>
                     </div>
-                </div>
 
-                <button type="submit" class="btn btn-gradient">ส่งความคิดเห็น</button>
+                    <div class="col-12">
+                        <label for="inputRating" class="form-label">ให้คะแนนความพึงพอใจ</label>
+                        <select class="form-select" id="inputRating" name="rating" required>
+                            <option value="" disabled selected hidden>เลือก...</option>
+                            <option>ดีมาก</option>
+                            <option>ดี</option>
+                            <option>พอใช้</option>
+                            <option>ควรปรับปรุง</option>
+                            <option>แย่</option>
+                        </select>
+                    </div>
 
-            </form>
+                    <div class="col-12">
+                        <label for="inputFavorite" class="form-label">ร้านที่ชอบมากที่สุด</label>
+                        <select id="inputFavorite" class="form-select" name="favorite_booth" required>
+                            <option value="" disabled selected hidden>เลือก...</option>
+                            <option>ร้านEduPath</option>
+                            <option>ร้านLackpim</option>
+                            <option>ร้านKagehonya</option>
+                            <option>ร้านKanitBook</option>
+                            <option>ร้านThe Fictional Alibi</option>
+                            <option>ร้านMythos Store</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="inputComment" class="form-label">ข้อเสนอแนะเพิ่มเติม</label>
+                        <input type="text" class="form-control" id="inputComment" name="comment" placeholder="เช่น อยากให้เพิ่มหมวดหมู่ร้าน หรือขยายเวลาเปิดงาน">
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" name="consent" required>
+                            <label class="form-check-label" for="gridCheck">
+                                ยืนยันว่าข้าพเจ้ายินยอมให้งาน G-7 Book Fair เก็บข้อมูลความคิดเห็นนี้
+                            </label>
+                            <div class="invalid-feedback">กรุณาติ๊กเพื่อยืนยันความยินยอม</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-gradient">ส่งความคิดเห็น</button>
+
+                </form>
             
         </div>
     </div>
