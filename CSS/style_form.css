@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background: linear-gradient(to top, #3b1a00 0%, #ff6a00 40%, #ff9d00 100%);
     background-size: cover;
@@ -9,46 +10,54 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     margin: 0px;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 body header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
         url("../resource/booth2_resources/booth2_stickyhead.jpg");
     margin: 0px;
     padding: 10px 25px;
 }
+
 .stickyhead {
     position: fixed;
     margin: 0px;
-    position:sticky;
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
     top: 0;
     z-index: 1000;
 }
+
 .stickyhead h1 {
     font-size: 50px;
     color: whitesmoke;
-    
+
 }
+
 .stickyhead button {
     padding: 10px 20px;
     font-size: 25px;
-    margin:0px 15px;
+    margin: 0px 15px;
     border-radius: 25px;
     transition: 0.3s;
     border: none;
 }
+
 .stickyhead button:hover {
-    transform:scale(1.1);
+    transform: scale(1.1);
     cursor: pointer;
 }
+
 .feedback-card {
     background-color: #ffffff;
     padding: 2rem;
@@ -58,11 +67,13 @@ body header {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     margin: 50px auto 50px;
 }
+
 .btn-gradient {
     background: linear-gradient(to bottom, #ff6a00 40%, #ff9d00 100%);
     border: none;
     color: white;
 }
+
 .register-card {
     display: flex;
     justify-content: center;
@@ -72,6 +83,7 @@ body header {
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
+
 .card {
     border: none;
     border-radius: 15px;
@@ -80,6 +92,31 @@ body header {
     width: 100%;
     max-width: 700px;
 }
+
 .btn-gradient:hover {
     opacity: 0.9;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #ff9d00;
+    box-shadow: 0 0 0 0.25rem rgba(255, 157, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+    .stickyhead {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .stickyhead nav {
+        margin-top: 10px;
+    }
+
+    .stickyhead button {
+        font-size: 16px;
+        margin: 5px;
+        padding: 5px 15px;
+    }
 }
