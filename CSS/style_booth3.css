@@ -130,6 +130,9 @@ body.booth3{
 .books-container {
     margin-top: 20px;
 }
+.horizontal {
+    display: none;
+}
 
 
 @media (max-width: 575.98px) {
