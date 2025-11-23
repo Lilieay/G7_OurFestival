@@ -20,11 +20,11 @@ body header {
         url("../resource/booth2_resources/booth2_stickyhead.jpg");
     margin: 0px;
     padding: 10px 25px;
-    
 }
+
 .stickyhead {
     margin: 0px;
-    position:sticky;
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,19 +34,17 @@ body header {
 .stickyhead h1 {
     font-size: 50px;
     color: whitesmoke;
-    
 }
 .stickyhead button {
     padding: 10px 20px;
     font-size: 25px;
-    margin:0px 15px;
+    margin: 0px 15px;
     border-radius: 25px;
     transition: 0.3s;
     border: none;
 }
-
 .stickyhead button:hover {
-    transform:scale(1.1);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -64,9 +62,11 @@ body header {
 
 .book-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 40px;
     justify-items: center;
+    align-items: start;
+    width: 100%;
 }
 
 .book-card {
@@ -74,7 +74,8 @@ body header {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     padding: 20px;
-    max-width: 280px;
+    width: 100%;
+    max-width: 320px;      
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     backdrop-filter: blur(4px);
 }
@@ -87,7 +88,8 @@ body header {
 
 .book-card img {
     width: 100%;
-    height: 380px;
+    height: auto;              
+    aspect-ratio: 2 / 3;       
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 15px;
@@ -115,4 +117,22 @@ body header {
     margin-top: 10px;
     font-weight: bold;
     color: red;
+}
+
+@media (max-width: 900px) {
+    .book-section { padding: 30px 30px; }
+    .book-grid { gap: 24px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .book-card { max-width: 300px; padding: 16px; }
+}
+
+@media (max-width: 600px) {
+    .stickyhead h1 { font-size: 28px; }
+    .stickyhead button { padding: 8px 12px; font-size: 16px; margin: 0 8px; }
+    .book-section { padding: 20px 16px; }
+    .book-section h1 { font-size: 22px; margin-bottom: 24px; }
+    .book-grid { gap: 16px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+    .book-card { padding: 12px; max-width: 260px; }
+    .book-card h2 { font-size: 16px; }
+    .book-card p { font-size: 13px; }
+    .book-card img { aspect-ratio: 3 / 4; }
 }
