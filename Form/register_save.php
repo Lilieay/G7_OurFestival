@@ -20,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'email' => $email,
             'tel' => $tel,
             'gender' => $gender,
-            'timestamp' => date('Y-m-d H:i:s') 
         ];
         $records[] = $newData;
         if (file_put_contents($dataFile, json_encode($records, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {

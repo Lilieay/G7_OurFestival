@@ -77,7 +77,6 @@
                                 echo "<tr>";
                                 echo "<td>$number</td>";
                                 echo "<td class='text-start'>$name</td>";
-                                // เปลี่ยน badge bg-secondary เป็น badge-theme
                                 echo "<td><span class='badge badge-theme'>$user</span></td>";
                                 echo "<td class='text-start'>$email</td>";
                                 echo "<td>$gender</td>";
