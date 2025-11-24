@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         file_put_contents($dataFile, json_encode($records, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
-        echo "<script>alert('ขอบคุณสำหรับความคิดเห็นของคุณ!'); history.back();</script>";;
+        header("Location: feedback_summary.php");
         exit;
     } else {
         echo "invalid";

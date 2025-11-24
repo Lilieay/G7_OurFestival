@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>ตัวอย่างหน้าโปรดักต์ - Pre-Order</title>
+    <link rel="stylesheet" href="../../CSS/style_booth1.css">
 </head>
 
 <body>
-    <link rel="stylesheet" href="/CSS/style_booth1.css">
     <header class="stickyhead">
         <h1>
             Boo(k) Night! Fair
@@ -39,7 +39,7 @@
     <div class="preorder-wrapper">
         <div class="preorder-left">
             <div class="preorder-image">
-                <img src="/resource/booth1_resources/TGAT2.jpg" alt="ตะลุยโจทย์ TGAT2">
+                <img src="../../resource/booth1_resources/TGAT2.jpg" alt="ตะลุยโจทย์ TGAT2">
                 <div class="preorder-badge">Hot on sale</div>
             </div>
         </div>
@@ -53,13 +53,13 @@
                 <span class="preorder-save">ลด20%</span>
             </div>
             <div class="preorder-actions">
-                <button class="preorder-btn preorder-btn--main">BUY</button>
+                <button class="preorder-btn preorder-btn--main" onclick="buy()">BUY</button>
                 <button class="preorder-btn preorder-btn--secondary">ใส่รถเข็น</button>
             </div>
         </div>
     </div>
 
-
+    <script src="../../JS/buy.js"></script>
 </body>
 
 </html>
