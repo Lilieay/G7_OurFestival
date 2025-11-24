@@ -13,14 +13,71 @@
     src: url(../resource/index_resource/BaiJamjuree-Regular.ttf) format(truetype);
 }
 
+@media (min-width: 0px) {
+    .footer-copyright {
+        font-size: 14.4px;
+    }
+
+    .name {
+        font-size: 34px;
+    }
+
+    #bar {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer-copyright {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 50.4px;
+    }
+
+    #bar {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-copyright {
+        font-size: 21.6px;
+    }
+
+    .name {
+        font-size: 50.4px;
+    }
+
+    #bar {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-copyright {
+        font-size: 25.2px;
+    }
+
+    .name {
+        font-size: 50.4px;
+    }
+
+    #bar {
+        font-size: 46px;
+    }
+}
+
 .name {
+    color: whitesmoke;
     font-family: "H2Name", sans-serif;
     margin: 0px;
     font-weight: 700;
-    font-size: clamp( 38px, 1.8rem ,56px);
 }
 
 footer {
+    width: 100%;
     background: linear-gradient(160deg, #662b00 0%, #3b1a00 50%, #1c0d00 100%);
     color: #b2b2b2;
     padding: 20px 0;
@@ -38,13 +95,20 @@ footer {
 }
 
 .footer-copyright {
+    font-family: SemiBaiJamjuree, sans-serif;
     margin: 0;
 }
 
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
 .footer-social a {
+    width: 20px;
+    height: 27px;
     color: #b2b2b2;
     font-size: 18px;
-    margin-left: 18px;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
@@ -67,6 +131,7 @@ footer {
 
 @media (min-width: 0px) {
     #navbar-bg {
+        display: flex;
         align-items: center;
         justify-content: space-between;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
@@ -83,7 +148,6 @@ footer {
         translate: calc(100vw - 125px) 0px;
         position: fixed;
         align-items: flex-end;
-        position: fixed;
         flex-direction: column;
         overflow: hidden;
         transition: all 0.5s ease;
@@ -93,7 +157,7 @@ footer {
     #mobile-nav a {
         width: 90px;
         background: white;
-        font-size: 0.7rem;
+        font-size: 11.2px;
         margin: 0px 15px;
         border-radius: 25px;
         transition: 0.3s;
@@ -114,7 +178,7 @@ footer {
 
     #mobile-nav a {
         width: 100px;
-        font-size: 0.6rem;
+        font-size: 12px;
     }
 }
 
@@ -124,7 +188,7 @@ footer {
     }
 
     .show {
-        height: 250px;
+        height: 260px;
     }
 
     #mobile-nav {
@@ -133,7 +197,7 @@ footer {
 
     #mobile-nav a {
         width: 110px;
-        font-size: 0.5rem;
+        font-size: 14px;
     }
 }
 
@@ -143,9 +207,32 @@ footer {
     }
 }
 
+@media (min-width: 0px) {
+    nav {
+        gap: 16px;
+    }
+}
+
+@media (min-width: 576px) {
+    nav {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    nav {
+        gap: 24px;
+    }
+}
+
+@media (min-width: 992px) {
+    nav {
+        gap: 28px;
+    }
+}
+
 nav {
     display: flex;
-    gap: 1rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -179,7 +266,8 @@ nav {
     #mobile {
         width: 100%;
         display: block;
-        position: fixed;
+        top: 0;
+        position: sticky;
         z-index: 1000;
     }
 }
@@ -208,39 +296,34 @@ nav {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
         url("../resource/booth2_resources/booth2_stickyhead.jpg");
     margin: 0px;
-    position: fixed;
+    position: sticky;
     align-items: center;
     justify-content: space-between;
     top: 0;
     z-index: 1000;
 }
 
-.stickyhead-desktop h2 {
-    color: whitesmoke;
-}
-
 .stickyhead-mobile {
     padding: 0px;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 @media (min-width: 0px) {
-   .navbtn a {
-    padding: 10px 20px;
-}
+    .navbtn a {
+        padding: 10px 20px;
+    }
 }
 
 @media (min-width: 1166px) {
-   .navbtn a {
-    padding: 5px 20px;
-}
+    .navbtn a {
+        padding: 5px 20px;
+    }
 }
 
 .navbtn a {
     background: white;
-    
     font-size: 25px;
     margin: 0px 15px;
     border-radius: 35px;
@@ -258,7 +341,7 @@ nav {
 }
 
 #bar {
-    font-size: clamp( 34px, 1.7rem ,52px);
+    color: whitesmoke;
     margin: 0px;
     transition: all 0.3 ease;
 }
@@ -270,4 +353,8 @@ nav {
 
 .navbar {
     padding: 5px 18px 5px 10px;
+}
+
+.space{
+    flex: 1;
 }
