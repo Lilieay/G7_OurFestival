@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 const pop = document.querySelector(".PopUp");
 
 gsap.utils.toArray(".PopUp").forEach(elem => {
@@ -52,7 +52,7 @@ mm.add("(max-width: 768px)", () => {
             start: "top 80%",
             toggleActions: "play none none none"
         },
-        x: -60,
+        x: -30,
         opacity: 0,
         duration: 0.5
     });
@@ -62,7 +62,7 @@ mm.add("(max-width: 768px)", () => {
             start: "top 80%",
             toggleActions: "play none none none"
         },
-        x: 60,
+        x: 30,
         opacity: 0,
         duration: 0.5
     });
@@ -72,7 +72,7 @@ mm.add("(max-width: 768px)", () => {
             start: "top 80%",
             toggleActions: "play none none none"
         },
-        x: -60,
+        x: -30,
         opacity: 0,
         duration: 0.5
     });
@@ -82,12 +82,12 @@ mm.add("(min-width: 769px)", () => {
     tl.from(book1, {
         y: "+=" + dy_1,
         x: "+=" + dx_1,
-        duration: 0.5
+        duration: 0.3
     })
         .from(book3, {
             y: "+=" + dy_2,
             x: "+=" + dx_2,
-            duration: 0.5
+            duration: 0.3
         })
 });
 

@@ -10,11 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <link rel="stylesheet" href="https://fontawesome.com/icons/house?f=classic&s=solid">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <!-- ScrollSmoother requires ScrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
     <script src="JS/particles.min.js"></script>
     <link rel="stylesheet" href="CSS/style.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
     <link rel="stylesheet" href="CSS/style_navbar_and_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -63,13 +61,13 @@
                 </div>
             </div>
         </div>
-        <div class="text-center text-break margin1 FadeUp">
+        <div class="text-center text-break sp-bot sp-top FadeUp">
             <h2 class="BBJ">หนังสือเป็นแหล่งความรู้</h2>
             <p>ทุกเล่มล้วนมีพลังในการพัฒนาชีวิตและเปิดมุมมองใหม่ๆต่อโลก</p>
         </div>
         <div class="container-fluid text-center" id="">
             <div class="row">
-                <h2 class="sp-bot BBJ">ขายดีที่สุด</h2>
+                <h2 class="sp-bot1 BBJ FadeUp">ขายดีที่สุด</h2>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
@@ -90,47 +88,62 @@
             </div>
         </div>
         <div class="container-fluid sp-bot">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <img src="resource/index_resource/story_img.jpg" alt="">
+            <div class="row text-break text-center align-items-center sp-bot2">
+                <div class="col-12 col-md-7 ">
+                    <img id="img-story" src="resource/index_resource/story_img.jpg" alt="">
                 </div>
-                <div class="col-12 col-md-6">
-                    <p class="text-center"><strong>จุดเริ่มต้นของโครงการ:</strong> งานหนังสือแฟร์ Boo(k) Night Fair
+            </div>
+            <div class="row text-break text-center align-items-center sp-bot2">
+                <div class="col-md-5"></div>
+                <div class="col-12 col-md-6" id="Test">
+                    <p class="text-center TextSplit" id=""><strong>จุดเริ่มต้นของโครงการ:</strong> งานหนังสือแฟร์ Boo(k)
+                        Night Fair
                         จัดขึ้นโดยกลุ่มนักศึกษาผู้รักการอ่านและต้องการสร้างพื้นที่แห่งการแบ่งปันความรู้</p>
                 </div>
             </div>
+            <div class="row text-break text-center align-items-center sp-bot2">
+                <div class="col-md-1"></div>
+                <div class="col-12 col-md-6">
+                    <p class="text-center TextSplit" id=""><strong>กิจกรรมภายในงาน:</strong> ร้านจำหน่ายหนังสือ นวนิยาย หนังสือเรียน
+                        สินค้าทำมือและกิจกรรมแลกเปลี่ยนประสบการณ์การอ่าน</p>
+                </div>
+            </div>
+            <div class="row text-break text-center align-items-center sp-bot2">
+                <div class="col-md-5"></div>
+                <div class="col-12 col-md-6">
+                    <p class="text-center TextSplit" id=""><strong>เป้าหมาย:</strong> ให้หนังสือเป็นจุดเริ่มต้นของแรงบันดาลใจ
+                        และให้การเรียนรู้เกิดขึ้นได้ทุกที่ ทุกเวลา
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="container g-0 text-center sp-bot" id="">
-            <p class="text-center"><strong>จุดเริ่มต้นของโครงการ:</strong> งานหนังสือแฟร์ Boo(k) Night Fair
-                จัดขึ้นโดยกลุ่มนักศึกษาผู้รักการอ่านและต้องการสร้างพื้นที่แห่งการแบ่งปันความรู้</p>
-            <p class="text-center"><strong>แนวคิดสำคัญ:</strong> “หนังสือไม่ควรอยู่แค่บนชั้น
-                แต่ควรอยู่ในมือของทุกคน”
-            </p>
-            <p class="text-center"><strong>กิจกรรมภายในงาน:</strong> ร้านจำหน่ายหนังสือ นวนิยาย หนังสือเรียน
-                สินค้าทำมือ
-                และกิจกรรมแลกเปลี่ยนประสบการณ์การอ่าน
-            </p>
-            <p class="text-center"><strong>เป้าหมาย:</strong> ให้หนังสือเป็นจุดเริ่มต้นของแรงบันดาลใจ
-                และให้การเรียนรู้เกิดขึ้นได้ทุกที่ ทุกเวลา
-            </p>
-        </div>
+
+        
     </div>
     <!--Member-->
 
     <div id="bg-3">
         <div class="container-fluid text-center">
+            <div class="container text-center sp-bot" id="">
+            <p class="text-center BBJ TextSplit2">"หนังสือไม่ควรอยู่แค่บนชั้น
+                แต่ควรอยู่ในมือของทุกคน”
+            </p>
+        <div id="for_register"></div>
+        </div>
             <div class="row">
-                <h2 class="BBJ">สมาชิก</h2>
-                <p>6809510016 นางสาวอีนัส กะลูแป</p>
-                <p>6809616979 นางสาวกนกขวัญ พระพรม</p>
-                <p>6809616995 นายกฤษกร แจ่มอรุณ</p>
-                <p>6809617043 นายชัยพร เมธเมาลี</p>
-                <p>6809617167 นายไทยุทธ พรชัย</p>
-                <p>6809617241 นายพงศภัค เกตุพันธ์</p>
-                <p>6809617290 นายภูบดี ศรีธัญ</p>
-                <p>6809617332 นางสาวรมณ ประภาพรสุข</p>
-                <p>6809617381 นายวรพล ปุพเพตะนันท์</p>
-                <p>6809681411 นายจีระศักดิ์ แสนขุม</p>
+                <h2 class="BBJ TextSplitLine1">สมาชิก</h2>
+                <div class="TextSplitLine2">
+                    <p>6809510016 นางสาวอีนัส กะลูแป</p>
+                    <p>6809616979 นางสาวกนกขวัญ พระพรม</p>
+                    <p>6809616995 นายกฤษกร แจ่มอรุณ</p>
+                    <p>6809617043 นายชัยพร เมธเมาลี</p>
+                    <p>6809617167 นายไทยุทธ พรชัย</p>
+                    <p>6809617241 นายพงศภัค เกตุพันธ์</p>
+                    <p>6809617290 นายภูบดี ศรีธัญ</p>
+                    <p>6809617332 นางสาวรมณ ประภาพรสุข</p>
+                    <p>6809617381 นายวรพล ปุพเพตะนันท์</p>
+                    <p>6809681411 นายจีระศักดิ์ แสนขุม</p>
+                </div>
             </div>
         </div>
     </div>
@@ -146,7 +159,7 @@
             </div>
         </div>
     </footer>
-    </div>
+    <script src="JS/TextSplit.js"></script>
     <script src="JS/Book.js"></script>
     <script src="JS/intro.js"></script>
     <script src="JS/particle1.js"></script>
