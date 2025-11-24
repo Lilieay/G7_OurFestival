@@ -25,6 +25,7 @@
 
 @media (min-width: 0px) {
     html {
+        scroll-behavior: smooth;
         font-size: 16px;
     }
 }
@@ -47,13 +48,13 @@
     }
 }
 
-h3{
-    font-family: "RegularBaiJamjuree" , sans-serif;
+h3 {
+    font-family: "RegularBaiJamjuree", sans-serif;
     font-size: 1.2rem;
 }
 
 h2 {
-    font-family: "RegularBaiJamjuree" , sans-serif;
+    font-family: "RegularBaiJamjuree", sans-serif;
 }
 
 #header {
@@ -61,7 +62,7 @@ h2 {
     background: url(../resource/index_resource/background.svg);
     background-size: cover;
     background-position: center;
-    width:100%;
+    width: 100%;
     height: 95vh;
     display: flex;
     align-items: center;
@@ -69,7 +70,7 @@ h2 {
 }
 
 p {
-    font-family: "BaiJamjuree",sans-serif;
+    font-family: "BaiJamjuree", sans-serif;
     font-size: 0.9rem;
     margin: 0%;
 }
@@ -279,31 +280,31 @@ body {
     color: #000;
 }
 
-.intro{
-     position: fixed;
-      inset: 0;
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-      z-index: 9999;
-      opacity: 1;
-      
+.intro {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 9999;
+    opacity: 1;
+
 }
 
-.out{
+.out {
     transition: all .5s;
     transform: translateY(-1000px);
 }
 
-.sp-top{
+.sp-top {
     margin-top: 300px;
 }
 
-.sp-bot{
+.sp-bot {
     margin-bottom: 300px;
 }
 
-.book{
+.book {
     margin-bottom: 400px;
     height: 420px;
     width: 290px;
@@ -312,46 +313,44 @@ body {
     border: 0;
 }
 
-.BBJ{
-    font-family:  BoldBaiJamjuree , sans-serif;
+.BBJ {
+    font-family: BoldBaiJamjuree, sans-serif;
 }
 
-#book1{
+#book1 {
     z-index: 3000;
 }
-#book2{
+
+#book2 {
     z-index: 2;
 }
-#book3{
+
+#book3 {
     z-index: 3;
 }
 
-#img-story{
+#img-story {
     width: 80%;
     border-radius: 25px;
 }
 
-#story-text{
+#story-text {
     margin: 50px;
 }
 
-.sp-bot2{
+.sp-bot2 {
     margin-bottom: 100px;
 }
 
-.char2{
-    font-family: "SemiBaiJamjuree" ,sans-serif;
+.char2 {
+    font-family: "SemiBaiJamjuree", sans-serif;
 }
 
-.line1{
-    font-family: "BoldBaiJamjuree" ;
+.line1 {
+    font-family: "BoldBaiJamjuree";
 }
 
 .word {
-    font-family: BaiJamjuree ,sans-serif;
+    font-family: BaiJamjuree, sans-serif;
 }
 
-#for_register{
-    width: 100%;
-    height: 200px;
-}

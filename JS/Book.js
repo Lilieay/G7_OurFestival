@@ -39,7 +39,7 @@ const dy_2 = rect2.top - rect3.top;
 const tl = gsap.timeline({
     scrollTrigger: {
         trigger: "#book1",
-        start: "top 80%",
+        start: "top 60%",
         toggleActions: "play none none none"
     }
 });
@@ -82,12 +82,14 @@ mm.add("(min-width: 769px)", () => {
     tl.from(book1, {
         y: "+=" + dy_1,
         x: "+=" + dx_1,
-        duration: 0.3
+        ease: "power3.out",
+        duration: 0.5
     })
         .from(book3, {
             y: "+=" + dy_2,
             x: "+=" + dx_2,
-            duration: 0.3
+            ease: "power3.out",
+            duration: 0.5
         })
 });
 

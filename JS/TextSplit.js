@@ -7,6 +7,19 @@ document.fonts.ready.then(() => {
             type: "words",
             wordsClass: "word"
         });
+        let split2 = new SplitText(".TextSplit2", {
+            type: "chars",
+            charsClass: "char2",
+        });
+        let splitline1 = new SplitText(".TextSplitLine1", {
+            type: "lines",
+            linesClass: "line1",
+        });
+        let splitline2 = new SplitText(".TextSplitLine2", {
+            type: "lines",
+            linesClass: "line2",
+
+        });
         gsap.from(split.words, {
             scrollTrigger: {
                 trigger: elem,
@@ -22,24 +35,13 @@ document.fonts.ready.then(() => {
             ease: "power2.out",
             duration: 0.8
         });
-
-    });
-
-});
-
-let split2 = new SplitText(".TextSplit2", {
-    type:"chars",
-    charsClass: "char2",
-    
-});
-
-gsap.from(split2.chars, {
+        gsap.from(split2.chars, {
             scrollTrigger: {
                 trigger: ".TextSplit2",
                 start: "top 80%",
                 toggleActions: "play none none none",
             },
-            y:0,
+            y: 0,
             autoAlpha: 0,
             stagger: {
                 amount: 1,
@@ -48,20 +50,13 @@ gsap.from(split2.chars, {
             ease: "power2.out",
             duration: 1.5
         });
-//
-let splitline1 = new SplitText(".TextSplitLine1", {
-    type:"lines",
-    linesClass: "line1",
-    
-});
-
-gsap.from(splitline1.lines, {
+        gsap.from(splitline1.lines, {
             scrollTrigger: {
                 trigger: ".TextSplitLine1",
                 start: "top 80%",
                 toggleActions: "play none none none",
             },
-            y:0,
+            y: 0,
             autoAlpha: 0,
             stagger: {
                 amount: 1,
@@ -70,20 +65,13 @@ gsap.from(splitline1.lines, {
             ease: "power2.out",
             duration: 1.5
         });
-//
-let splitline2 = new SplitText(".TextSplitLine2", {
-    type:"lines",
-    linesClass: "line2",
-    
-});
-
-gsap.from(splitline2.lines, {
+        gsap.from(splitline2.lines, {
             scrollTrigger: {
                 trigger: ".TextSplitLine2",
                 start: "top 80%",
                 toggleActions: "play none none none",
             },
-            y:0,
+            y: 0,
             autoAlpha: 0,
             stagger: {
                 amount: 1,
@@ -92,3 +80,6 @@ gsap.from(splitline2.lines, {
             ease: "power2.out",
             duration: 3
         });
+    });
+
+});
