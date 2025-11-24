@@ -61,3 +61,307 @@ a {
 .card-content a:hover {
     background-color: #54302a;
 }
+footer {
+    background-color:#ce3622 ;
+    padding: 5px;
+    margin-top: 10px;
+    
+}
+footer p {
+    display: flex;
+    justify-content: end;
+    color: aliceblue;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+}
+h1 {
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
+        url("../resource/booth2_resources/booth2_stickyhead.jpg");
+    margin: 0px;
+    padding: 10px 25px;
+}
+.stickyhead {
+    margin: 0px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+}
+.stickyhead h1 {
+    font-size: 50px;
+    color: whitesmoke;
+}
+.stickyhead button {
+    padding: 10px 20px;
+    font-size: 25px;
+    margin: 0px 15px;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: none;
+}
+.stickyhead button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    display: flex;
+    flex: 1 1 45%;
+    min-height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card img {
+    margin: 30px 0 0 20px;
+    width: 175px;
+    height: 225px;
+    object-fit: cover;
+    border: 3px solid #ce3622;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.card-content h3 {
+    margin: 0 0 10px 0;
+}
+.card-content p {
+    margin: 0 0 10px 0;
+    color: #3b3b3b;
+}
+.card-content a {
+    text-decoration: none;
+    background-color: #ce3622;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+}
+.card-content a:hover {
+    background-color: #54302a;
+}
+footer {
+    background-color: #ce3622;
+    padding: 5px;
+    margin-top: 10px;
+}
+footer p {
+    display: flex;
+    justify-content: end;
+    color: aliceblue;
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+}
+h1 {
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.11)),
+        url("../resource/booth2_resources/booth2_stickyhead.jpg");
+    margin: 0px;
+    padding: 10px 25px;
+}
+.stickyhead {
+    margin: 0px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+}
+.stickyhead h1 {
+    font-size: 50px;
+    color: whitesmoke;
+}
+.stickyhead button {
+    padding: 10px 20px;
+    font-size: 25px;
+    margin: 0px 15px;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: none;
+}
+.stickyhead button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    display: flex;
+    flex: 1 1 45%;
+    min-height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card img {
+    margin: 30px 0 0 20px;
+    width: 175px;
+    height: 225px;
+    object-fit: cover;
+    border: 3px solid #ce3622;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.card-content h3 {
+    margin: 0 0 10px 0;
+}
+.card-content p {
+    margin: 0 0 10px 0;
+    color: #3b3b3b;
+}
+.card-content a {
+    text-decoration: none;
+    background-color: #ce3622;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+}
+.card-content a:hover {
+    background-color: #54302a;
+}
+footer {
+    background-color: #ce3622;
+    padding: 5px;
+    margin-top: 10px;
+}
+footer p {
+    display: flex;
+    justify-content: end;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 1024px) {
+    .stickyhead h1 {
+        font-size: 36px;
+    }
+    .stickyhead button {
+        font-size: 18px;
+        padding: 8px 15px;
+        margin: 0 5px;
+    }
+    .card {
+        flex: 1 1 45%;
+    }
+    .card img {
+        width: 140px;
+        height: 180px;
+        margin: 30px 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .stickyhead {
+        flex-direction: column;
+        padding: 15px;
+        position: relative;
+    }
+    .stickyhead h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .stickyhead nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .stickyhead button {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 0;
+        width: auto;
+    }
+    .card-container {
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 15px;
+    }
+    .card {
+        flex: 1 1 100%;
+        min-height: auto;
+    }
+    .card img {
+        width: 110px;
+        height: 150px;
+        margin: 20px 0 0 15px;
+        border-width: 2px;
+        border-radius: 6px;
+    }
+    .card-content {
+        padding: 15px;
+    }
+    .card-content h3 {
+        font-size: 18px;
+    }
+    .card-content p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .card-content a {
+        font-size: 14px;
+        padding: 6px 10px;
+        align-self: flex-start;
+    }
+    footer p {
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+    }
+}
