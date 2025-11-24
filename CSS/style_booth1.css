@@ -10,6 +10,9 @@
     }
 
     body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
       font-family: system-ui, Arial, sans-serif;
       margin: 0;
       background: var(--bg);
@@ -19,7 +22,7 @@
       background-size: cover;
       background-position: center;
       height: 100vh;
-      
+
     }
 
     header {
@@ -420,11 +423,12 @@
 
     .LOGO {
       display: block;
-      margin: 0 auto;  
-      width: 25%;    
+      margin: 0 auto;
+      width: 25%;
       height: auto;
     }
+
     .LINE {
       font-size: 18px;
-      color:#ffffff;
+      color: #ffffff;
     }

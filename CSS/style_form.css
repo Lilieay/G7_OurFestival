@@ -63,26 +63,6 @@ h1 {
     border-color: #ff9d00;
     box-shadow: 0 0 0 0.25rem rgba(255, 157, 0, 0.25);
 }
-<<<<<<< HEAD
-=======
-
-@media (max-width: 768px) {
-    .stickyhead {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .stickyhead nav {
-        margin-top: 10px;
-    }
-
-    .stickyhead button {
-        font-size: 16px;
-        margin: 5px;
-        padding: 5px 15px;
-    }
-}
 
 .table-theme thead {
     background-color: #3b1a00 !important; 
@@ -112,4 +92,3 @@ h1 {
     align-items: center;
     padding: 20px;
 }
->>>>>>> b32b365d116d664d29b4f6ac08062ba5775dbd84

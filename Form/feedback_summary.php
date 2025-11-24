@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,18 +8,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style_form.css">
+    <link rel="stylesheet" href="../CSS/style_navbar_and_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
 
-    <header class="stickyhead">
-        <h1>Boo(k) Night! Fair</h1>
-        <nav>
-            <a href="../index.html"><button>Home</button></a>
-            <a href="../booth_directory/booth_directory.html"><button>Booth</button></a>
-            <a href="Register.html"><button>Register</button></a>
-            <a href="Feedback.html"><button>Feedback</button></a>
+<body>
+    <!--Navbar Desktop-->
+    <header class="stickyhead-desktop navbar">
+        <h2 class="name">Boo(k) Night! Fair</h2>
+        <nav id="desktop-nav" class="navbtn">
+            <a href="../index.html">Home</a>
+            <a href="../booth_directory/booth_directory.html">Booth</a>
+            <a href="Register.html">Register</a>
+            <a href="Feedback.html">Feedback</a>
         </nav>
     </header>
+    <!--Navbar Mobile-->
+    <div id="mobile">
+        <header class="stickyhead-mobile">
+            <div class="navbar" id="navbar-bg">
+                <h2 class="name">Boo(k) Night! Fair</h2>
+                <h2 id="bar"><i class="fa-solid fa-bars"></i></h2>
+            </div>
+        </header>
+        <nav id="mobile-nav" class="text-center hidden navbtn">
+            <a href="../index.html">Home</a>
+            <a href="../booth_directory/booth_directory.html">Booth</a>
+            <a href="Register.html">Register</a>
+            <a href="Feedback.html">Feedback</a>
+        </nav>
+    </div>
 
     <div class="summary-container">
         <div class="card p-4 shadow-sm" style="width: 100%; max-width: 900px;">
@@ -69,8 +88,8 @@
                         </tbody>
                     </table>
                 </div>
-                
-                <?php
+
+            <?php
             } else {
                 echo "<div class='alert alert-warning text-center'>ยังไม่มีข้อมูลความคิดเห็น</div>";
             }
@@ -81,6 +100,18 @@
             </div>
         </div>
     </div>
-
+    <footer>
+        <div class="footer-content">
+            <p class="footer-copyright"> Boo(k) Night Fair </p>
+            <div class="footer-social">
+                <a href="https://github.com/Lilieay/G7_OurFestival.git" aria-label="Github"><i
+                        class="fab fa-github"></i></a>
+                <a href="#" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                <a href="#" aria-label="Shop"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/navbar.js"></script>
 </body>
+
 </html>
