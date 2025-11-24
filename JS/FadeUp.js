@@ -12,7 +12,7 @@ if (!localStorage.getItem("visited2")) {
                 },
                 y: 50,
                 opacity: 0,
-                duration: 1.5
+                duration: 1
             });
         });
     }, 6000);
@@ -27,7 +27,7 @@ if (!localStorage.getItem("visited2")) {
             },
             y: 50,
             opacity: 0,
-            duration: 1.5
+            duration: 1
         });
     });
 }
