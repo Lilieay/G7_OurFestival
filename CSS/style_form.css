@@ -63,3 +63,53 @@ h1 {
     border-color: #ff9d00;
     box-shadow: 0 0 0 0.25rem rgba(255, 157, 0, 0.25);
 }
+<<<<<<< HEAD
+=======
+
+@media (max-width: 768px) {
+    .stickyhead {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .stickyhead nav {
+        margin-top: 10px;
+    }
+
+    .stickyhead button {
+        font-size: 16px;
+        margin: 5px;
+        padding: 5px 15px;
+    }
+}
+
+.table-theme thead {
+    background-color: #3b1a00 !important; 
+    color: white !important;
+}
+
+.badge-theme {
+    background-color: #ff6a00 !important; 
+    color: white !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background: linear-gradient(to bottom, #ff6a00 40%, #ff9d00 100%) !important;
+    border-color: #ff6a00 !important;
+    color: white !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 165, 0, 0.1) !important; 
+}
+
+.summary-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+>>>>>>> b32b365d116d664d29b4f6ac08062ba5775dbd84
