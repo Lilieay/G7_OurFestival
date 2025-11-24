@@ -4,10 +4,10 @@ document.fonts.ready.then(() => {
 
     document.querySelectorAll(".TextSplit").forEach((elem) => {
         let split = new SplitText(elem, {
-            type: "chars",
-            charsClass: "char"
+            type: "words",
+            wordsClass: "word"
         });
-        gsap.from(split.chars, {
+        gsap.from(split.words, {
             scrollTrigger: {
                 trigger: elem,
                 start: "top 80%",

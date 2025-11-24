@@ -339,10 +339,14 @@ body {
     margin-bottom: 100px;
 }
 
-.char , .char2{
-    font-family: BaiJamjuree ,sans-serif;
+.char2{
+    font-family: "SemiBaiJamjuree" ,sans-serif;
 }
 
 .line1{
     font-family: "BoldBaiJamjuree" ;
+}
+
+.word {
+    font-family: BaiJamjuree ,sans-serif;
 }

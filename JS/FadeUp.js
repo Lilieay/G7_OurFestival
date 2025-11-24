@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-
+let tl = gsap.timeline()
 if (!localStorage.getItem("visited2")) {
     setTimeout(() => {
         gsap.utils.toArray(".FadeUp").forEach(elem => {
