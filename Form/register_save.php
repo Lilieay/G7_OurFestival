@@ -1,35 +1,41 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "book_night_db";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-$conn->set_charset("utf8");
-
-if ($conn->connect_error) {
-    die("เชื่อมต่อฐานข้อมูลไม่ได้: " . $conn->connect_error);
+$dataFile = 'register_data.json';
+if (file_exists($dataFile)) {
+    $jsonContent = file_get_contents($dataFile);
+    $records = json_decode($jsonContent, true) ?? [];
+} else {
+    $records = [];
 }
-
-if (isset($_POST['btn_register'])) {
-    $fullname = $_POST['fullname_register'];
-    $user = $_POST['username'];
-    $email = $_POST['email'];
-    $tel = $_POST['tel'];
-    $pass = $_POST['password']; 
-    $gender = $_POST['gender'];
-
-    $sql = "INSERT INTO users (fullname, username, email, tel, password, gender) 
-            VALUES ('$fullname', '$user', '$email', '$tel', '$pass', '$gender')";
-
-    if ($conn->query($sql) === TRUE) {
-        echo "<script>
-                alert('ลงทะเบียนเรียบร้อย!');
-                window.location.href = 'register.php';
-              </script>";
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $fullname = trim($_POST['fullname_register'] ?? '');
+    $user = trim($_POST['username'] ?? '');
+    $email = trim($_POST['email'] ?? '');
+    $tel = trim($_POST['tel'] ?? '');
+    $pass = trim($_POST['password'] ?? ''); 
+    $gender = trim($_POST['gender'] ?? 'ไม่ระบุ');
+    if ($fullname && $user && $email) {
+        $newData = [
+            'fullname' => $fullname,
+            'username' => $user,
+            'email' => $email,
+            'tel' => $tel,
+            'gender' => $gender,
+            'timestamp' => date('Y-m-d H:i:s') 
+        ];
+        $records[] = $newData;
+        if (file_put_contents($dataFile, json_encode($records, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
+            echo "<script>
+                    alert('ลงทะเบียนเรียบร้อย!');
+                    window.location.href = 'register_summary.php'; 
+                  </script>";
+        } else {
+            echo "เกิดข้อผิดพลาดในการบันทึกไฟล์";
+        }
     } else {
-        echo "เกิดข้อผิดพลาด: " . $sql . "<br>" . $conn->error;
+        echo "<script>
+                alert('กรุณากรอกข้อมูลให้ครบถ้วน');
+                history.back();
+              </script>";
     }
 }
-$conn->close();
 ?>

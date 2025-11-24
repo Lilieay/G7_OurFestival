@@ -30,8 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: feedback_summary.php");
         exit;
     } else {
-        echo "invalid";
+        echo "<script>
+                alert('กรุณากรอกข้อมูลให้ครบถ้วน และติ๊กยืนยันความยินยอม'); 
+                history.back();
+              </script>";
         exit;
+        
     }
 }
 
