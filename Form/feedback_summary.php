@@ -19,9 +19,11 @@
             <a href="Feedback.html"><button>Feedback</button></a>
         </nav>
     </header>
-    <div class="container mt-5">
-        <div class="bg-white p-4 rounded shadow">
-            <h2 class="text-center fw-bold mb-4">เสียงตอบรับจากผู้เข้าร่วมงาน</h2>
+
+    <div class="summary-container">
+        <div class="card p-4 shadow-sm" style="width: 100%; max-width: 900px;">
+            <h2 class="text-center fw-bold mb-4" style="color: #3b1a00;">เสียงตอบรับจากผู้เข้าร่วมงาน</h2>
+
             <?php
             $dataFile = 'feedback_data.json';
             if (file_exists($dataFile)) {
@@ -30,11 +32,12 @@
             } else {
                 $records = [];
             }
+
             if (!empty($records)) {
             ?>
                 <div class="table-responsive">
-                    <table class="table table-bordered table-hover">
-                        <thead class="table-dark">
+                    <table class="table table-hover table-bordered align-middle text-center table-theme">
+                        <thead>
                             <tr>
                                 <th>ลำดับ</th>
                                 <th>ชื่อ-สกุล</th>
@@ -45,34 +48,36 @@
                         </thead>
                         <tbody>
                             <?php
+                            $records = array_reverse($records); // โชว์ล่าสุดก่อน
                             foreach ($records as $index => $row) {
                                 $name = htmlspecialchars($row['name']);
                                 $rating = htmlspecialchars($row['rating']);
                                 $favorite = htmlspecialchars($row['favorite_booth']);
                                 $comment = htmlspecialchars($row['comment']);
-                                $number = $index + 1;
+                                $number = count($records) - $index;
+
                                 echo "<tr>";
                                 echo "<td>$number</td>";
-                                echo "<td>$name</td>";
-                                echo "<td><span class='badge bg-primary'>$rating</span></td>";
+                                echo "<td class='text-start'>$name</td>";
+                                // ใช้ badge-theme สีส้ม
+                                echo "<td><span class='badge badge-theme'>$rating</span></td>";
                                 echo "<td>$favorite</td>";
-                                echo "<td>$comment</td>";
+                                echo "<td class='text-start'>$comment</td>";
                                 echo "</tr>";
                             }
                             ?>
                         </tbody>
                     </table>
                 </div>
-                <div class="alert alert-success mt-3 text-center">
-                    รวมทั้งหมด: <?php echo count($records); ?> ความคิดเห็น
-                </div>
-            <?php
+                
+                <?php
             } else {
                 echo "<div class='alert alert-warning text-center'>ยังไม่มีข้อมูลความคิดเห็น</div>";
             }
             ?>
+
             <div class="text-center mt-4">
-                <a href="Feedback.html" class="btn btn-secondary">กลับไปหน้าประเมิน</a>
+                <a href="Feedback.html" class="btn btn-primary px-4">กลับไปหน้าประเมิน</a>
             </div>
         </div>
     </div>

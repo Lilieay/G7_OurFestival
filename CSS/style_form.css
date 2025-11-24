@@ -60,7 +60,6 @@ body header {
     transform: scale(1.1);
     cursor: pointer;
 }
-
 .feedback-card {
     background-color: #ffffff;
     padding: 2rem;
@@ -122,4 +121,33 @@ body header {
         margin: 5px;
         padding: 5px 15px;
     }
+}
+
+.table-theme thead {
+    background-color: #3b1a00 !important; 
+    color: white !important;
+}
+
+.badge-theme {
+    background-color: #ff6a00 !important; 
+    color: white !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background: linear-gradient(to bottom, #ff6a00 40%, #ff9d00 100%) !important;
+    border-color: #ff6a00 !important;
+    color: white !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 165, 0, 0.1) !important; 
+}
+
+.summary-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }

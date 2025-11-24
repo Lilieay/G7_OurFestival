@@ -21,9 +21,9 @@
         </nav>
     </header>
 
-    <div class="container d-flex justify-content-center align-items-center min-vh-100 mt-5 mb-5">
+    <div class="summary-container">
         <div class="card p-4 shadow-sm" style="width: 100%; max-width: 900px;">
-            <h2 class="text-center fw-bold mb-4">รายชื่อผู้ลงทะเบียนเข้าร่วมงาน</h2>
+            <h2 class="text-center fw-bold mb-4" style="color: #3b1a00;">รายชื่อผู้ลงทะเบียนเข้าร่วมงาน</h2>
 
             <?php
             $dataFile = 'register_data.json';
@@ -33,18 +33,19 @@
             } else {
                 $visitors = [];
             }
+            
             if (!empty($visitors)) {
             ?>
                 <div class="table-responsive">
-                    <table class="table table-hover table-bordered align-middle text-center">
-                        <thead class="table-primary">
+                    <table class="table table-hover table-bordered align-middle text-center table-theme">
+                        <thead>
                             <tr>
                                 <th>ลำดับ</th>
                                 <th>ชื่อ-นามสกุล</th>
                                 <th>Username</th>
                                 <th>Email</th>
                                 <th>เพศ</th>
-                                </tr>
+                            </tr>
                         </thead>
                         <tbody>
                             <?php
@@ -55,10 +56,12 @@
                                 $email = htmlspecialchars($row['email']);
                                 $gender = htmlspecialchars($row['gender']);
                                 $number = count($visitors) - $index;
+                                
                                 echo "<tr>";
                                 echo "<td>$number</td>";
-                                echo "<td class='text-start'>$name</td>"; 
-                                echo "<td>$user</td>";
+                                echo "<td class='text-start'>$name</td>";
+                                // เปลี่ยน badge bg-secondary เป็น badge-theme
+                                echo "<td><span class='badge badge-theme'>$user</span></td>";
                                 echo "<td class='text-start'>$email</td>";
                                 echo "<td>$gender</td>";
                                 echo "</tr>";
@@ -67,14 +70,13 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="alert alert-success mt-3 text-center">
-                    <strong>ยอดรวมผู้ลงทะเบียนทั้งหมด: <?php echo count($visitors); ?> คน</strong>
-                </div>
-            <?php
+                
+                <?php
             } else {
                 echo "<div class='alert alert-warning text-center'>ยังไม่มีผู้ลงทะเบียน</div>";
             }
             ?>
+            
             <div class="text-center mt-4">
                 <a href="Register.html" class="btn btn-primary px-4">ลงทะเบียนเพิ่ม</a>
             </div>
