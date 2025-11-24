@@ -300,11 +300,11 @@ body {
 }
 
 .sp-bot{
-    margin-bottom: 100px;
+    margin-bottom: 300px;
 }
 
 .book{
-    margin-bottom: 100px;
+    margin-bottom: 400px;
     height: 420px;
     width: 290px;
     border-radius: 10px;
@@ -314,4 +314,18 @@ body {
 
 .BBJ{
     font-family:  BoldBaiJamjuree , sans-serif;
+}
+
+#book1{
+    z-index: 3000;
+}
+#book2{
+    z-index: 2;
+}
+#book3{
+    z-index: 3;
+}
+
+img {
+    width: 90%;
 }
