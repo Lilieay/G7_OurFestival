@@ -260,7 +260,7 @@ body {
 }
 
 #bg-3 {
-    padding: 80px 0px;
+    padding: 0px 0px 80px 0px;
     background: #131313;
     background: linear-gradient(177deg, rgba(19, 19, 19, 1) 27%, rgba(145, 61, 22, 1) 50%, rgba(204, 87, 41, 1) 70%, rgba(232, 133, 39, 1) 86%);
 }
@@ -354,3 +354,69 @@ body {
     font-family: BaiJamjuree, sans-serif;
 }
 
+#random-book {
+    border-radius: 25px; 
+    max-height:420px;
+    max-width:300px;
+    margin: 50px auto;
+}
+
+#random-book-warp {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#button-warp {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin: auto;
+}
+
+#button-warp button {
+    width: 8rem  ;
+    transition: all 0.2s ease;
+    border: 0px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    padding: 6px 15px;
+}
+
+#button-warp button:hover {
+    transform: scale(1.05) translateY(-0.5rem);
+}
+
+#randombook
+{
+    animation: Fade 1s;
+    height: 420px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+a{
+    
+    font-family: RegularBaiJamjuree,sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+.RBJ {
+    font-family: RegularBaiJamjuree,sans-serif;
+}
+
+.btn1 {
+    font-family: RegularBaiJamjuree,sans-serif;
+    background-color: white;
+    transition: all 0.2s ease;
+    border: 0px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    padding: 6px 13px;
+}
+
+.btn1:hover{
+    transform: scale(1.05) translateY(-0.5rem);
+}    

@@ -93,13 +93,13 @@ mm.add("(min-width: 769px)", () => {
         })
 });
 
-
-
-/*const tl = gsap.timeline();
-tl.from(".book" ,{
-    y: -5000,
-    duration: 3
-});
-tl.to(".book",{
-
-});*/
+gsap.from("#img-story", {
+                scrollTrigger: {
+                    trigger: "#img-story",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+                x: -200,
+                opacity: 0,
+                duration: 1
+            });
