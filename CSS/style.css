@@ -57,7 +57,7 @@ h2 {
     font-family: "RegularBaiJamjuree", sans-serif;
 }
 
-#header {
+header {
     z-index: 1;
     background: url(../resource/index_resource/background.svg);
     background-size: cover;
@@ -362,6 +362,7 @@ body {
 }
 
 #random-book-warp {
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-items: center;
